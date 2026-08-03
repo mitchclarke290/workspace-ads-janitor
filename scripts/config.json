@@ -1,0 +1,14 @@
+{
+  "_note": "Account + runtime config for the ads-janitor scripts. Switch customer_id/login_customer_id to production ONLY per AGENTS.md (Basic access approved + explicit go-ahead).",
+  "customer_id": "6066113101",
+  "login_customer_id": "8423405897",
+  "production": {
+    "customer_id": "6650239393",
+    "login_customer_id": "5671434588",
+    "enabled": false
+  },
+  "timezone": "America/New_York",
+  "adc_path": "/Users/mitchellclarke/.config/gcloud/application_default_credentials.json",
+  "max_mutations_per_run": 25,
+  "pending_approval_ttl_hours": 48
+}

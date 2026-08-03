@@ -1,0 +1,4 @@
+{
+  "_note": "Per-segment last audience bid-down date. Enforces the >=21-day cadence gate. Format: segments = { \"<segment_id>\": \"<ISO 8601 date>\" }. Before applying a -5% bid modifier to a segment, check its last date here; skip if < 21 days ago.",
+  "segments": {}
+}

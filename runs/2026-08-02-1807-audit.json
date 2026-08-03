@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-08-02T18:07:24-04:00",
+  "results": {
+    "keywords": {
+      "title": "Keywords (demotion ladder)",
+      "proposals": [],
+      "flags": []
+    },
+    "search_terms": {
+      "title": "Search terms (phrase negatives)",
+      "proposals": [],
+      "flags": []
+    },
+    "audiences": {
+      "title": "Audiences (-5% / 21-day cadence)",
+      "proposals": [],
+      "flags": []
+    },
+    "geos": {
+      "title": "Geos (exclusions)",
+      "proposals": [],
+      "flags": []
+    },
+    "ads_assets": {
+      "title": "Ads & assets (disapprovals, low assets)",
+      "proposals": [],
+      "flags": []
+    },
+    "budgets": {
+      "title": "Budget reallocation (suggestion)",
+      "proposals": [],
+      "flags": []
+    },
+    "schedule_devices": {
+      "title": "Dayparting & devices (suggestions)",
+      "proposals": [],
+      "flags": []
+    }
+  }
+}

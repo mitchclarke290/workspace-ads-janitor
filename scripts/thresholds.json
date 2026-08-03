@@ -1,0 +1,47 @@
+{
+  "_note": "Tunable audit thresholds. Dollar values in account currency. target_cpa drives 'CPA too high' checks; set to your real target when moving to production.",
+  "lookback_days": 28,
+  "target_cpa": 50.0,
+  "keywords": {
+    "min_spend": 25.0,
+    "cpa_multiplier": 1.5,
+    "min_clicks_no_conv": 20,
+    "low_quality_score_max": 3,
+    "min_age_days": 14
+  },
+  "search_terms": {
+    "min_spend": 15.0,
+    "min_clicks_no_conv": 12
+  },
+  "audiences": {
+    "min_spend": 25.0,
+    "cpa_worse_pct": 20.0,
+    "cadence_days": 21,
+    "bid_down_factor": 0.95
+  },
+  "geos": {
+    "min_spend": 25.0,
+    "cpa_multiplier": 2.0
+  },
+  "spend": {
+    "loser_min_spend": 100.0,
+    "loser_cpa_multiplier": 2.0,
+    "overspend_ratio": 0.95,
+    "underspend_ratio": 0.5
+  },
+  "conversion_health": {
+    "min_spend": 50.0
+  },
+  "schedule": {
+    "min_spend_per_hour": 10.0,
+    "bid_down_pct": 20
+  },
+  "devices": {
+    "min_spend": 50.0,
+    "cpa_worse_pct": 30.0,
+    "bid_down_pct": 15
+  },
+  "assets": {
+    "min_impressions": 500
+  }
+}
