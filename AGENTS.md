@@ -14,7 +14,7 @@ Isolated workspace for the **ads-janitor** sub-agent. Job: audit Google Ads asse
 
 - **Reads / audits** → `google-ads` MCP server, tool `search_search` (GAQL SELECT). Read-only.
 - **Writes / mutations** → native `google-ads` Python client via the workspace venv:
-  `~/.openclaw/workspace-ads-janitor/.venv/bin/python`, login_customer_id `8423405897`.
+  `~/.openclaw/workspaces/ads-janitor/.venv/bin/python`, login_customer_id `8423405897`.
   Services: `GoogleAdsService` (search+mutate), `AdGroupCriterionService` (keyword match-type steps + phrase negatives).
   Every mutation is gated behind double-confirmed Slack approval.
 

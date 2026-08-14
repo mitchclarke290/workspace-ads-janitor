@@ -9,7 +9,7 @@ One-off: build a small Search test campaign in test account 6066113101.
 - Language: English
 
 Safe to run against a TEST account. Creates everything PAUSED.
-Run: ~/.openclaw/workspace-ads-janitor/.venv/bin/python scripts/create_test_campaign.py
+Run: ~/.openclaw/workspaces/ads-janitor/.venv/bin/python scripts/create_test_campaign.py
 """
 import os, sys, uuid
 from google.ads.googleads.client import GoogleAdsClient

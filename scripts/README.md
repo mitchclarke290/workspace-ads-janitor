@@ -3,8 +3,8 @@
 Deterministic Python scripts the janitor runs via the workspace venv:
 
 ```bash
-VENV=~/.openclaw/workspace-ads-janitor/.venv/bin/python
-cd ~/.openclaw/workspace-ads-janitor
+VENV=~/.openclaw/workspaces/ads-janitor/.venv/bin/python
+cd ~/.openclaw/workspaces/ads-janitor
 ```
 
 All account IDs / thresholds live in `scripts/config.json` and
