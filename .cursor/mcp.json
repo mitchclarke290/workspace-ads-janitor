@@ -1,0 +1,40 @@
+{
+  "mcpServers": {
+    "google-ads": {
+      "command": "pipx",
+      "args": [
+        "run",
+        "--spec",
+        "git+https://github.com/googleads/google-ads-mcp.git",
+        "google-ads-mcp"
+      ],
+      "env": {
+        "GOOGLE_APPLICATION_CREDENTIALS": "/Users/mitchellclarke/.config/gcloud/application_default_credentials.json",
+        "GOOGLE_PROJECT_ID": "ad-ops-maintenance-agents",
+        "GOOGLE_CLOUD_PROJECT": "ad-ops-maintenance-agents",
+        "GOOGLE_ADS_DEVELOPER_TOKEN": "q_eR624d7G0B9BTyFjp0pw",
+        "GOOGLE_ADS_LOGIN_CUSTOMER_ID": "8423405897"
+      }
+    },
+    "openclaw": {
+      "url": "http://127.0.0.1:57730/mcp",
+      "alwaysLoad": true,
+      "headers": {
+        "Authorization": "Bearer 4aaf44fb07cf58665fb8f5830a581b5732e267b0825de87b28e6d204a121c627",
+        "x-session-key": "agent:ads-janitor:cron:f08a23c3-100d-4261-8a47-8a744783ad53:run:9b1d352b-550f-456c-bb0b-a7bb72340df8",
+        "x-openclaw-session-id": "9b1d352b-550f-456c-bb0b-a7bb72340df8",
+        "x-openclaw-agent-id": "ads-janitor",
+        "x-openclaw-account-id": "",
+        "x-openclaw-message-channel": "slack",
+        "x-openclaw-current-channel-id": "",
+        "x-openclaw-current-thread-ts": "",
+        "x-openclaw-current-message-id": "",
+        "x-openclaw-current-inbound-audio": "",
+        "x-openclaw-inbound-event-kind": "",
+        "x-openclaw-source-reply-delivery-mode": "",
+        "x-openclaw-require-explicit-message-target": "true",
+        "x-openclaw-cli-capture-key": ""
+      }
+    }
+  }
+}
