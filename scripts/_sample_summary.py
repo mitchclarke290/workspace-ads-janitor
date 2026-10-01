@@ -9,7 +9,7 @@ Run: .venv/bin/python scripts/_sample_summary.py
 """
 from datetime import datetime
 
-from gads_common import CONFIG, CUSTOMER_ID, THRESHOLDS
+from gads_common import CONFIG, CUSTOMER_IDS, THRESHOLDS
 
 # (key, title, actionable-proposals, flag-only suggestions, review flags)
 # Mirrors the structure run_audit.py builds from each audit module.
@@ -110,7 +110,7 @@ def main():
     lines = [
         "*[SAMPLE - synthetic findings, no live data, nothing pending]*",
         "",
-        f"*GAds audit - account {CUSTOMER_ID} - last {THRESHOLDS['lookback_days']}d - {ts}*",
+        f"*GAds audit - {len(CUSTOMER_IDS)} accounts - last {THRESHOLDS['lookback_days']}d - {ts}*",
         "",
     ]
     total_actions = 0

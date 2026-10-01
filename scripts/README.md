@@ -7,12 +7,12 @@ VENV=~/.openclaw/workspaces/ads-janitor/.venv/bin/python
 cd ~/.openclaw/workspaces/ads-janitor
 ```
 
-All account IDs / thresholds live in `scripts/config.json` and
-`scripts/thresholds.json` — never hardcoded in prompts. Currently pointed at
-the TEST account (6066113101). Production switch happens in `config.json`
-only, per AGENTS.md.
+All account IDs live in `scripts/config.json`. Shared floors live in
+`scripts/thresholds.json`. Per-account Target CPL lives in the Google Sheet
+`Ads Janitor KPI Benchmarks` (`benchmarks_spreadsheet_id` in config). Currently
+pointed at production MCC `5671434588` and the daily CIDs in `customer_ids`.
 
-## The loop (daily, 12:00 PM ET)
+## The loop (daily, 9:30 AM ET)
 
 ### 1. Audit (read-only, scheduled)
 
@@ -26,8 +26,8 @@ $VENV scripts/run_audit.py
   warning is posted instead - a dead tag must never trigger mass demotions.
 - Then runs the audits (keywords, search terms, audiences, geos, ads/assets,
   spend report, dayparting/devices).
-- Prints a Slack-ready summary -> post it to `#ads-janitor` verbatim.
-- Writes `runs/<ts>-audit.{json,md}` and `memory/pending-approvals.json`.
+- Prints a short Slack index -> post it to `#ads-janitor` verbatim.
+- Writes `runs/<ts>-audit.json`, markdown tables at `runs/<ts>-audit.md`, a formatted workbook at `runs/<ts>-audit.xlsx`, and `memory/pending-approvals.json`.
 - Proposals carry IDs: `K*` keywords, `S*` search terms, `A*` audiences,
   `G*` geos, `D*` disapproved ads. `[suggestion]` and `[review]` lines
   (including all `B*` spend and `C*` conversion-health items) have no
@@ -38,7 +38,7 @@ Run a single section while debugging: `$VENV scripts/run_audit.py keywords`
 
 ### 2. Confirmation 1 — Mitchell selects
 
-Mitchell replies in Slack: `SELECT K1,S2,A1` (or `SELECT ALL`).
+Mitchell replies in Slack: `SELECT 1173238911-K1,3442012546-S2` (or `SELECT ALL`).
 
 ### 3. Echo the exact change set (dry run)
 
@@ -73,8 +73,9 @@ execute; restart from step 2 or drop the batch.
 | `demote_keyword` | BROAD->PHRASE or PHRASE->EXACT: creates the tighter-match keyword (same text/bid), pauses the old criterion. EXACT: pauses the keyword. One step per cycle, never skips. |
 | `negate_search_term` | Adds a campaign-level PHRASE negative keyword. |
 | `audience_bid_down` | Sets criterion bid_modifier to current x 0.95, once per segment per 21 days (gated by `memory/audience-bid-state.json`). |
-| `exclude_geo` | Adds a negative location campaign criterion. |
 | `pause_ad` | Pauses a disapproved ad (fix + resubmit is manual). |
+
+Geo exclusions are not recommended and `apply_changes.py` refuses `exclude_geo`.
 
 **Budgets are report-only.** `audit_spend.py` surfaces money losers and
 over/underspend vs budget capacity; `apply_changes.py` has no budget

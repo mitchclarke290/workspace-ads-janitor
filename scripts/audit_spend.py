@@ -3,18 +3,18 @@
 Spend audit - REPORT ONLY. No budget mutations are proposed or supported.
 
 Reports, per enabled campaign over the lookback window:
-  - Money losers: real spend with zero conversions or CPA far over target
+  - Money losers: real spend with zero conversions or CPL far over target
   - Overspend: spend well above budget capacity (budget x days)
   - Underspend: spend well below budget capacity (wasted headroom)
 
 Budget reallocation stays a human decision; this audit just surfaces the data.
 """
-from gads_common import Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql
+from gads_common import Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql, target_cpl
 
 
 def run(client):
     t = THRESHOLDS["spend"]
-    target_cpa = THRESHOLDS["target_cpa"]
+    target = target_cpl()
     days = THRESHOLDS["lookback_days"]
     start, end = date_range()
     f = Findings("B")  # all flag_only - nothing executable
@@ -40,10 +40,10 @@ def run(client):
         shared = " (shared budget)" if r.campaign_budget.explicitly_shared else ""
 
         if cost >= t["loser_min_spend"] * 1_000_000 and (
-            conv == 0 or (this_cpa and this_cpa > target_cpa * t["loser_cpa_multiplier"])
+            conv == 0 or (this_cpa and this_cpa > target * t["loser_cpa_multiplier"])
         ):
             reason = ("0 conv" if conv == 0
-                      else f"CPA ${this_cpa:,.2f} vs target ${target_cpa:,.2f}")
+                      else f"CPL ${this_cpa:,.2f} vs target ${target:,.2f}")
             f.add(
                 {"type": "flag_only"},
                 f"Money loser: {name} spent {fmt_money(cost)} in {days}d | {reason}"

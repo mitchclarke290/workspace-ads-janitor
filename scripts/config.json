@@ -1,14 +1,30 @@
 {
-  "_note": "Account + runtime config for the ads-janitor scripts. Switch customer_id/login_customer_id to production ONLY per AGENTS.md (Basic access approved + explicit go-ahead).",
-  "customer_id": "6066113101",
-  "login_customer_id": "8423405897",
-  "production": {
-    "customer_id": "6650239393",
-    "login_customer_id": "5671434588",
-    "enabled": false
+  "_note": "Account + runtime config for the ads-janitor scripts. Daily audits run every customer_ids entry under login_customer_id (MCC).",
+  "login_customer_id": "5671434588",
+  "customer_ids": [
+    "1173238911",
+    "3442012546",
+    "2837637005",
+    "5526102045",
+    "6983036531",
+    "4973002366"
+  ],
+  "customer_names": {
+    "1173238911": "The Waterproofing Pros",
+    "3442012546": "Auto Image- East",
+    "2837637005": "Eat Clean Bro",
+    "5526102045": "Rocco Steakhouse",
+    "6983036531": "Simply Solar",
+    "4973002366": "Dreamhouse Mortgage"
+  },
+  "test": {
+    "customer_id": "6066113101",
+    "login_customer_id": "8423405897"
   },
   "timezone": "America/New_York",
   "adc_path": "/Users/mitchellclarke/.config/gcloud/application_default_credentials.json",
   "max_mutations_per_run": 25,
-  "pending_approval_ttl_hours": 48
+  "pending_approval_ttl_hours": 48,
+  "benchmarks_spreadsheet_id": "1pyHYNNwXOl7tYu7vSAXrER_-twT4VN4O6Qg5H9uC3Rw",
+  "benchmarks_spreadsheet_url": "https://docs.google.com/spreadsheets/d/1pyHYNNwXOl7tYu7vSAXrER_-twT4VN4O6Qg5H9uC3Rw/edit"
 }

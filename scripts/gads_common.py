@@ -20,8 +20,52 @@ RUNS = WORKSPACE / "runs"
 CONFIG = json.loads((SCRIPTS / "config.json").read_text())
 THRESHOLDS = json.loads((SCRIPTS / "thresholds.json").read_text())
 
-CUSTOMER_ID = CONFIG["customer_id"]
-LOGIN_CID = CONFIG["login_customer_id"]
+LOGIN_CID = str(CONFIG["login_customer_id"])
+CUSTOMER_IDS = [str(c) for c in CONFIG.get("customer_ids") or [CONFIG["customer_id"]]]
+CUSTOMER_NAMES = {str(k): v for k, v in CONFIG.get("customer_names", {}).items()}
+_active = {"customer_id": CUSTOMER_IDS[0]}
+_benchmarks = {}
+_benchmarks_note = ""
+
+
+def get_customer_id():
+    return _active["customer_id"]
+
+
+def customer_label(cid=None):
+    cid = str(cid or get_customer_id())
+    name = CUSTOMER_NAMES.get(cid)
+    return f"{name} ({cid})" if name else cid
+
+
+def set_active_customer(cid):
+    cid = str(cid)
+    if cid not in CUSTOMER_IDS:
+        raise ValueError(f"{cid} is not in config customer_ids {CUSTOMER_IDS}")
+    _active["customer_id"] = cid
+
+
+def set_benchmarks(by_cid, note=""):
+    global _benchmarks, _benchmarks_note
+    _benchmarks = {str(k): v for k, v in (by_cid or {}).items()}
+    _benchmarks_note = note or ""
+
+
+def benchmarks_note():
+    return _benchmarks_note
+
+
+def target_cpl(cid=None):
+    """Per-account Target CPL from the benchmarks sheet, else thresholds.json."""
+    cid = str(cid or get_customer_id())
+    row = _benchmarks.get(cid) or {}
+    value = row.get("target_cpl")
+    try:
+        if value is not None and value != "":
+            return float(value)
+    except (TypeError, ValueError):
+        pass
+    return float(THRESHOLDS["target_cpl"])
 
 
 def build_client():
@@ -50,7 +94,8 @@ def build_client():
     )
 
 
-def gaql(client, query, customer_id=CUSTOMER_ID):
+def gaql(client, query, customer_id=None):
+    customer_id = customer_id or get_customer_id()
     """
     Run a GAQL query, return list of rows.
 

@@ -1,7 +1,5801 @@
 {
-  "created_at": "2026-08-20T12:00:38-04:00",
-  "expires_at": "2026-08-22T12:00:38-04:00",
-  "customer_id": "6066113101",
+  "created_at": "2026-09-30T09:31:13-04:00",
+  "expires_at": "2026-10-02T09:31:13-04:00",
+  "login_customer_id": "5671434588",
+  "customer_ids": [
+    "1173238911",
+    "3442012546",
+    "2837637005",
+    "5526102045",
+    "6983036531"
+  ],
   "status": "awaiting_confirmation_1",
-  "proposals": []
+  "proposals": [
+    {
+      "id": "1173238911-K1",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "1173238911",
+        "ad_group_id": "179541422113",
+        "criterion_id": "297701501401",
+        "keyword_text": "basement waterproofing specialist",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"basement waterproofing specialist\" PHRASE->EXACT (The Waterproofing Pros / Ad group 1) | CPA $670.73 vs target $50.00",
+      "detail": {
+        "cost_micros": 670734917,
+        "clicks": 36,
+        "conversions": 1.0,
+        "cpa": 670.734917,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S1",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "a 1 basement solutions",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"a 1 basement solutions\" (phrase) in The Waterproofing Pros | $110.21, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 110210000,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S2",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement waterproofing",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement waterproofing\" (phrase) in The Waterproofing Pros | $107.32, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 107320000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S3",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "all things basementy nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"all things basementy nj\" (phrase) in The Waterproofing Pros | $80.37, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 80370000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S4",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement sealing company",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement sealing company\" (phrase) in The Waterproofing Pros | $75.53, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 75530000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S5",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement waterproofing specialists",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement waterproofing specialists\" (phrase) in The Waterproofing Pros | $64.96, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 64960000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S6",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "northern basement systems vermont",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"northern basement systems vermont\" (phrase) in The Waterproofing Pros | $58.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 58321876,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S7",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "nj waterproofing",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"nj waterproofing\" (phrase) in The Waterproofing Pros | $53.69, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 53690000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S8",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "waterproofing basement walls from outside",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"waterproofing basement walls from outside\" (phrase) in The Waterproofing Pros | $46.19, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 46188524,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S9",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "blue umbrella waterproofing reviews",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"blue umbrella waterproofing reviews\" (phrase) in The Waterproofing Pros | $34.60, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 34600000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S10",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "tuff n dri barrier board",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tuff n dri barrier board\" (phrase) in The Waterproofing Pros | $30.94, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 30940000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S11",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement water seeping through floor",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement water seeping through floor\" (phrase) in The Waterproofing Pros | $29.25, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 29250000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S12",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement waterproofing colts neck nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement waterproofing colts neck nj\" (phrase) in The Waterproofing Pros | $28.11, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28110000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S13",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "waterproof basement",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"waterproof basement\" (phrase) in The Waterproofing Pros | $26.76, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26760000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S14",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement waterproofing near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement waterproofing near me\" (phrase) in The Waterproofing Pros | $23.39, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23390000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "1173238911-S15",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "1173238911",
+        "campaign_id": "22443512049",
+        "term": "basement water repair near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"basement water repair near me\" (phrase) in The Waterproofing Pros | $23.33, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23330000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "1173238911"
+    },
+    {
+      "id": "3442012546-K1",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "143926607463",
+        "criterion_id": "10273636",
+        "keyword_text": "car stereo",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car stereo\" PHRASE->EXACT (MT | Car Audio | Search / Ad group 1) | CPA $114.33 vs target $50.00",
+      "detail": {
+        "cost_micros": 114329106,
+        "clicks": 13,
+        "conversions": 1.0,
+        "cpa": 114.329106,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K2",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "183828004941",
+        "criterion_id": "47993813",
+        "keyword_text": "remote car starter",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"remote car starter\" PHRASE->EXACT (MT | Remote Start | Search | EB2 / Ad group 1) | CPA $111.52 vs target $50.00",
+      "detail": {
+        "cost_micros": 223033368,
+        "clicks": 23,
+        "conversions": 2.0,
+        "cpa": 111.516684,
+        "quality_score": 2
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K3",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "183828004941",
+        "criterion_id": "3367850129",
+        "keyword_text": "remote car starter installation",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"remote car starter installation\" PHRASE->EXACT (MT | Remote Start | Search | EB2 / Ad group 1) | CPA $86.73 vs target $50.00",
+      "detail": {
+        "cost_micros": 86734842,
+        "clicks": 10,
+        "conversions": 1.0,
+        "cpa": 86.734842,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K4",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "192340015355",
+        "criterion_id": "15379813",
+        "keyword_text": "car audio",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car audio\" PHRASE->EXACT (MT | Car audio | Search Tinton / Ad group 1) | CPA $106.95 vs target $50.00",
+      "detail": {
+        "cost_micros": 320864992,
+        "clicks": 28,
+        "conversions": 3.0,
+        "cpa": 106.95499733333332,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K5",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "192340015355",
+        "criterion_id": "42574531",
+        "keyword_text": "car stereo installation",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car stereo installation\" PHRASE->EXACT (MT | Car audio | Search Tinton / Ad group 1) | CPA $162.17 vs target $50.00",
+      "detail": {
+        "cost_micros": 162166928,
+        "clicks": 10,
+        "conversions": 1.0,
+        "cpa": 162.166928,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K6",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "195319276764",
+        "criterion_id": "177629142",
+        "keyword_text": "car tint",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car tint\" PHRASE->EXACT (MT | Tint | Search | Sea Girt / Ad group 1) | CPA $175.01 vs target $50.00",
+      "detail": {
+        "cost_micros": 350041482,
+        "clicks": 22,
+        "conversions": 2.000179,
+        "cpa": 175.0050780455149,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K7",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "195319276764",
+        "criterion_id": "515156545",
+        "keyword_text": "auto tints",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto tints\" PHRASE->EXACT (MT | Tint | Search | Sea Girt / Ad group 1) | CPA $103.74 vs target $50.00",
+      "detail": {
+        "cost_micros": 518681052,
+        "clicks": 28,
+        "conversions": 4.999821,
+        "cpa": 103.73992428928956,
+        "quality_score": 0
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K8",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "195319276764",
+        "criterion_id": "109931962812",
+        "keyword_text": "tint near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint near me\" PHRASE->EXACT (MT | Tint | Search | Sea Girt / Ad group 1) | CPA $130.46 vs target $50.00",
+      "detail": {
+        "cost_micros": 260910000,
+        "clicks": 14,
+        "conversions": 2.0,
+        "cpa": 130.455,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K9",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "195319276764",
+        "criterion_id": "295404785739",
+        "keyword_text": "tint shop near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint shop near me\" PHRASE->EXACT (MT | Tint | Search | Sea Girt / Ad group 1) | CPA $396.79 vs target $50.00",
+      "detail": {
+        "cost_micros": 198394343,
+        "clicks": 7,
+        "conversions": 0.5,
+        "cpa": 396.788686,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K10",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "177629142",
+        "keyword_text": "car tint",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car tint\" PHRASE->EXACT (MT | Tint Search | Tinton / Ad group 1) | CPA $203.76 vs target $50.00",
+      "detail": {
+        "cost_micros": 407525064,
+        "clicks": 28,
+        "conversions": 2.0,
+        "cpa": 203.762532,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K11",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "246326677",
+        "keyword_text": "auto window tinting",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto window tinting\" PHRASE->EXACT (MT | Tint Search | Tinton / Ad group 1) | CPA $88.41 vs target $50.00",
+      "detail": {
+        "cost_micros": 353623230,
+        "clicks": 22,
+        "conversions": 4.0,
+        "cpa": 88.4058075,
+        "quality_score": 6
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K12",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "515156545",
+        "keyword_text": "auto tints",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto tints\" PHRASE->EXACT (MT | Tint Search | Tinton / Ad group 1) | CPA $83.14 vs target $50.00",
+      "detail": {
+        "cost_micros": 498820288,
+        "clicks": 32,
+        "conversions": 6.0,
+        "cpa": 83.13671466666666,
+        "quality_score": 0
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K13",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "41153006726",
+        "keyword_text": "car window tinting near me",
+        "current_match_type": "EXACT",
+        "new_match_type": "PAUSED",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car window tinting near me\" EXACT->PAUSED (MT | Tint Search | Tinton / Ad group 1) | CPA $97.12 vs target $50.00",
+      "detail": {
+        "cost_micros": 194240000,
+        "clicks": 11,
+        "conversions": 2.0,
+        "cpa": 97.12,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K14",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "109931962812",
+        "keyword_text": "tint near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint near me\" PHRASE->EXACT (MT | Tint Search | Tinton / Ad group 1) | CPA $324.76 vs target $50.00",
+      "detail": {
+        "cost_micros": 324890000,
+        "clicks": 16,
+        "conversions": 1.000389,
+        "cpa": 324.76366693356283,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K15",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193688224465",
+        "criterion_id": "295404785739",
+        "keyword_text": "tint shop near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint shop near me\" PHRASE->EXACT (MT | Tint Search | Tinton / Ad group 1) | CPA $153.51 vs target $50.00",
+      "detail": {
+        "cost_micros": 153510000,
+        "clicks": 8,
+        "conversions": 1.0,
+        "cpa": 153.51,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K16",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "193222651846",
+        "criterion_id": "319761293194",
+        "keyword_text": "tire service near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tire service near me\" PHRASE->EXACT (MT | Wheels Search | Tinton 200326 / Ad group 1) | CPA $80.63 vs target $50.00",
+      "detail": {
+        "cost_micros": 181415091,
+        "clicks": 31,
+        "conversions": 2.25,
+        "cpa": 80.62892933333333,
+        "quality_score": 1
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K17",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "203138769308",
+        "criterion_id": "300001848456",
+        "keyword_text": "ppf car",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"ppf car\" PHRASE->EXACT (MT | PPF | Search Tinton 250326 / Ad group 2) | CPA $148.35 vs target $50.00",
+      "detail": {
+        "cost_micros": 296695494,
+        "clicks": 23,
+        "conversions": 2.0,
+        "cpa": 148.347747,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K18",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "198943624270",
+        "criterion_id": "10000421",
+        "keyword_text": "tonneau covers",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tonneau covers\" PHRASE->EXACT (MT | Truck Accessories |  Search | Tinton | 0406 / Ad group 1) | CPA $211.29 vs target $50.00",
+      "detail": {
+        "cost_micros": 422580438,
+        "clicks": 37,
+        "conversions": 2.0,
+        "cpa": 211.290219,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K19",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "198943624270",
+        "criterion_id": "10000431",
+        "keyword_text": "truck bed covers",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"truck bed covers\" PHRASE->EXACT (MT | Truck Accessories |  Search | Tinton | 0406 / Ad group 1) | CPA $76.00 vs target $50.00",
+      "detail": {
+        "cost_micros": 227996105,
+        "clicks": 23,
+        "conversions": 3.0,
+        "cpa": 75.99870166666666,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K20",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "198943624270",
+        "criterion_id": "302618641904",
+        "keyword_text": "truck lift kits",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"truck lift kits\" PHRASE->EXACT (MT | Truck Accessories |  Search | Tinton | 0406 / Ad group 1) | CPA $96.21 vs target $50.00",
+      "detail": {
+        "cost_micros": 96210000,
+        "clicks": 11,
+        "conversions": 1.0,
+        "cpa": 96.21,
+        "quality_score": 7
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K21",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "106511135",
+        "keyword_text": "car window tinting",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car window tinting\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $98.48 vs target $50.00",
+      "detail": {
+        "cost_micros": 886290816,
+        "clicks": 42,
+        "conversions": 8.999789,
+        "cpa": 98.47906612032793,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K22",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "177629142",
+        "keyword_text": "car tint",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car tint\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $160.69 vs target $50.00",
+      "detail": {
+        "cost_micros": 883776888,
+        "clicks": 42,
+        "conversions": 5.5,
+        "cpa": 160.6867069090909,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K23",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "246326677",
+        "keyword_text": "auto window tinting",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto window tinting\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $159.38 vs target $50.00",
+      "detail": {
+        "cost_micros": 796970603,
+        "clicks": 31,
+        "conversions": 5.000593,
+        "cpa": 159.3752186990623,
+        "quality_score": 9
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K24",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "515156545",
+        "keyword_text": "auto tints",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto tints\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $151.22 vs target $50.00",
+      "detail": {
+        "cost_micros": 1285292221,
+        "clicks": 57,
+        "conversions": 8.499684,
+        "cpa": 151.21647122410667,
+        "quality_score": 0
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K25",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "36170292819",
+        "keyword_text": "window tinting near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"window tinting near me\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $126.63 vs target $50.00",
+      "detail": {
+        "cost_micros": 886427474,
+        "clicks": 37,
+        "conversions": 7.0,
+        "cpa": 126.63249628571428,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K26",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201498506771",
+        "criterion_id": "109931962812",
+        "keyword_text": "tint near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint near me\" PHRASE->EXACT (MT | Tint | Search Brick 220426 / Ad group 1) | CPA $90.70 vs target $50.00",
+      "detail": {
+        "cost_micros": 770971082,
+        "clicks": 45,
+        "conversions": 8.500316,
+        "cpa": 90.6991083625597,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K27",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "196567706115",
+        "criterion_id": "106511135",
+        "keyword_text": "car window tinting",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car window tinting\" PHRASE->EXACT (MT | Tint | Search | Multi Location / Auto Tint) | CPA $96.08 vs target $50.00",
+      "detail": {
+        "cost_micros": 624496615,
+        "clicks": 45,
+        "conversions": 6.5,
+        "cpa": 96.0764023076923,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K28",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "196567706115",
+        "criterion_id": "177629142",
+        "keyword_text": "car tint",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car tint\" PHRASE->EXACT (MT | Tint | Search | Multi Location / Auto Tint) | CPA $100.78 vs target $50.00",
+      "detail": {
+        "cost_micros": 603063236,
+        "clicks": 51,
+        "conversions": 5.983664,
+        "cpa": 100.78494313851847,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K29",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "196567706115",
+        "criterion_id": "36170292819",
+        "keyword_text": "window tinting near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"window tinting near me\" PHRASE->EXACT (MT | Tint | Search | Multi Location / Auto Tint) | CPA $140.74 vs target $50.00",
+      "detail": {
+        "cost_micros": 633278456,
+        "clicks": 52,
+        "conversions": 4.499611,
+        "cpa": 140.74071203043997,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K30",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "196567706115",
+        "criterion_id": "295404785739",
+        "keyword_text": "tint shop near me",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"tint shop near me\" PHRASE->EXACT (MT | Tint | Search | Multi Location / Auto Tint) | CPA $108.37 vs target $50.00",
+      "detail": {
+        "cost_micros": 325118356,
+        "clicks": 24,
+        "conversions": 3.0,
+        "cpa": 108.37278533333334,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K31",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "199004575409",
+        "criterion_id": "349487883576",
+        "keyword_text": "ppf coating",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"ppf coating\" PHRASE->EXACT (MT | PPF Search Brick / Ad group 1) | CPA $90.12 vs target $50.00",
+      "detail": {
+        "cost_micros": 180240000,
+        "clicks": 21,
+        "conversions": 2.0,
+        "cpa": 90.12,
+        "quality_score": 5
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K32",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "200515903351",
+        "criterion_id": "10000431",
+        "keyword_text": "truck bed covers",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"truck bed covers\" PHRASE->EXACT (MT | Truck Accessories |  Search | EH / Ad group 1) | CPA $86.32 vs target $50.00",
+      "detail": {
+        "cost_micros": 295110582,
+        "clicks": 16,
+        "conversions": 3.418888,
+        "cpa": 86.31770973486117,
+        "quality_score": 2
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K33",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "200515903351",
+        "criterion_id": "11685111",
+        "keyword_text": "truck accessories",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"truck accessories\" PHRASE->EXACT (MT | Truck Accessories |  Search | EH / Ad group 1) | CPA $136.17 vs target $50.00",
+      "detail": {
+        "cost_micros": 612701190,
+        "clicks": 83,
+        "conversions": 4.499567,
+        "cpa": 136.16892247631827,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K34",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "200515903351",
+        "criterion_id": "33874630",
+        "keyword_text": "running boards",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"running boards\" PHRASE->EXACT (MT | Truck Accessories |  Search | EH / Ad group 1) | CPA $107.41 vs target $50.00",
+      "detail": {
+        "cost_micros": 241686819,
+        "clicks": 19,
+        "conversions": 2.250216,
+        "cpa": 107.40605301891019,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K35",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "200515903351",
+        "criterion_id": "307284741",
+        "keyword_text": "pickup bed covers",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"pickup bed covers\" PHRASE->EXACT (MT | Truck Accessories |  Search | EH / Ad group 1) | CPA $102.12 vs target $50.00",
+      "detail": {
+        "cost_micros": 102120000,
+        "clicks": 9,
+        "conversions": 1.0,
+        "cpa": 102.12,
+        "quality_score": 8
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K36",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201385744047",
+        "criterion_id": "177629142",
+        "keyword_text": "car tint",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"car tint\" PHRASE->EXACT (MT | Tint | Search | EH / Ad group 1) | CPA $82.70 vs target $50.00",
+      "detail": {
+        "cost_micros": 389707120,
+        "clicks": 33,
+        "conversions": 4.7125,
+        "cpa": 82.69647108753314,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K37",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "201385744047",
+        "criterion_id": "515156545",
+        "keyword_text": "auto tints",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"auto tints\" PHRASE->EXACT (MT | Tint | Search | EH / Ad group 1) | CPA $75.20 vs target $50.00",
+      "detail": {
+        "cost_micros": 324828190,
+        "clicks": 26,
+        "conversions": 4.31979,
+        "cpa": 75.19536597843876,
+        "quality_score": 0
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-K38",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "3442012546",
+        "ad_group_id": "200955390955",
+        "criterion_id": "81603902693",
+        "keyword_text": "ceramic coating paint protection",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"ceramic coating paint protection\" PHRASE->EXACT (AS | AI | Search | Ceramic Coat | SG / Near Me) | CPA $158.53 vs target $50.00",
+      "detail": {
+        "cost_micros": 158526870,
+        "clicks": 6,
+        "conversions": 1.0,
+        "cpa": 158.52687,
+        "quality_score": 0
+      },
+      "section": "keywords",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S1",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tint man bayville nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint man bayville nj\" (phrase) in MT | Tint | Search Brick 220426 | $118.71, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 118712420,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S2",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "auto image brick township",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image brick township\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $118.59, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 118590000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S3",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tints near me\" (phrase) in MT | Tint | Search Brick 220426 | $113.50, 5 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 113500000,
+        "clicks": 5
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S4",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "car window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car window tinting near me\" (phrase) in MT | Tint Search | Tinton | $112.77, 6 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 112770000,
+        "clicks": 6
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S5",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tint shops near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shops near me\" (phrase) in MT | Tint | Search | Sea Girt | $109.63, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 109630000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S6",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tinting",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting\" (phrase) in MT | Tint | Search Brick 220426 | $98.94, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 98940000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S7",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "auto window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto window tinting near me\" (phrase) in MT | Tint | Search Brick 220426 | $98.33, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 98331840,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S8",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tints near me\" (phrase) in MT | Tint Search | Tinton | $91.20, 5 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 91200000,
+        "clicks": 5
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S9",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "auto image nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image nj\" (phrase) in MT | PPF | Search Tinton 250326 | $90.33, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 90330000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S10",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607472",
+        "term": "rhino lining near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"rhino lining near me\" (phrase) in MT | Truck Accessories |  Search | EH | $89.13, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 89130000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S11",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car audio near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car audio near me\" (phrase) in MT | Car audio | Search Tinton | $85.03, 8 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 85030000,
+        "clicks": 8
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S12",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car stereo installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car stereo installation near me\" (phrase) in MT | Car audio | Search Tinton | $80.20, 5 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 80203596,
+        "clicks": 5
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S13",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "nj vinyl wrapz",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"nj vinyl wrapz\" (phrase) in MT | PPF | Search Tinton 250326 | $78.12, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 78117056,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S14",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "fix car speakers near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"fix car speakers near me\" (phrase) in MT | Car audio | Search Tinton | $74.98, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 74980000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S15",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "auto image",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $72.84, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 72840000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S16",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tinted windows",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinted windows\" (phrase) in MT | Tint | Search Brick 220426 | $71.03, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 71030000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S17",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tinting places near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting places near me\" (phrase) in MT | Tint Search | Tinton | $68.60, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 68600000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S18",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "soundwaves brick nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"soundwaves brick nj\" (phrase) in MT | Car audio | Search Brick 300326 | $68.51, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 68510000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S19",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tinted windows nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinted windows nj\" (phrase) in MT | Tint | Search Brick 220426 | $65.65, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 65650000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S20",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "ppf near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf near me\" (phrase) in MT | PPF | Search | EB | $64.08, 8 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 64080000,
+        "clicks": 8
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S21",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tint man bayville",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint man bayville\" (phrase) in MT | Tint | Search Brick 220426 | $63.48, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 63479540,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S22",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "tint shops near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shops near me\" (phrase) in MT | Tint | Search | Multi Location | $62.94, 6 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 62940000,
+        "clicks": 6
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S23",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "costco tire center appointment",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"costco tire center appointment\" (phrase) in MT | Wheels Search | Tinton 200326 | $61.07, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 61070136,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S24",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tints",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tints\" (phrase) in MT | Tint | Search Brick 220426 | $60.32, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 60320000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S25",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tint man bayville nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint man bayville nj\" (phrase) in MT | Tint | Search | Sea Girt | $60.05, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 60050000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S26",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tinting near me cars",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting near me cars\" (phrase) in MT | Tint | Search Brick 220426 | $59.67, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 59670000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S27",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "car window tilt",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car window tilt\" (phrase) in MT | Tint | Search Brick 220426 | $55.26, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 55260000,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S28",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car stereo repair shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car stereo repair shop near me\" (phrase) in MT | Car Audio | Search | $54.42, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 54423364,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S29",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "auto works middletown nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto works middletown nj\" (phrase) in MT | Tint Search | Tinton | $54.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 54320000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S30",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint near me\" (phrase) in MT | Tint | Search Brick 220426 | $53.71, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 53710000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S31",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint brick nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint brick nj\" (phrase) in MT | Tint | Search Brick 220426 | $53.24, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 53240000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S32",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "tint windows near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint windows near me\" (phrase) in MT | Tint | Search | EH | $53.03, 6 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 53030000,
+        "clicks": 6
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S33",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "auto tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto tint\" (phrase) in MT | Tint | Search Brick 220426 | $52.84, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 52840000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S34",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "auto eclipse long branch",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto eclipse long branch\" (phrase) in MT | Tint Search | Tinton | $51.66, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 51661744,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S35",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662775984",
+        "term": "car detailing east brunswick",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car detailing east brunswick\" (phrase) in MT | Detailing | Search | EB | $51.46, 10 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 51460000,
+        "clicks": 10
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S36",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car audio installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car audio installation near me\" (phrase) in MT | Car Audio | Search | $50.84, 7 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 50840000,
+        "clicks": 7
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S37",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint near me\" (phrase) in MT | Tint Search | Tinton | $49.56, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 49560000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S38",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "pc richards car stereo",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"pc richards car stereo\" (phrase) in MT | Car audio | Search Brick 300326 | $49.40, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 49400000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S39",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607478",
+        "term": "kowalski tire egg harbor city new jersey",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"kowalski tire egg harbor city new jersey\" (phrase) in MT | Rims & Tires | Search | EH | $46.10, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 46099638,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S40",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car stereo shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car stereo shop near me\" (phrase) in MT | Car audio | Search Tinton | $45.92, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 45920000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S41",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "mobile window tint service near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mobile window tint service near me\" (phrase) in MT | Tint | Search Brick 220426 | $45.88, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 45880000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S42",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "professional window tinting barnegat nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"professional window tinting barnegat nj\" (phrase) in MT | Tint | Search | EH | $45.07, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 45067708,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S43",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "truck bed cover near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"truck bed cover near me\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $44.83, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 44827244,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S44",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607472",
+        "term": "rhino liner nearby",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"rhino liner nearby\" (phrase) in MT | Truck Accessories |  Search | EH | $44.76, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 44760000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S45",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "ppf film installers near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf film installers near me\" (phrase) in MT | PPF | Search Tinton 250326 | $44.25, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 44250000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S46",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "coastal tinting toms river nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"coastal tinting toms river nj\" (phrase) in MT | Tint | Search | Multi Location | $43.85, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 43848664,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S47",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "radio para carro con pantalla y gps",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"radio para carro con pantalla y gps\" (phrase) in MT | Car audio | Search Brick 300326 | $42.91, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 42910000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S48",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "tesla ppf near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tesla ppf near me\" (phrase) in MT | PPF | Search Tinton 250326 | $41.12, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 41120000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S49",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car stereo installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car stereo installation near me\" (phrase) in MT | Car Audio | Search | $40.51, 8 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 40510000,
+        "clicks": 8
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S50",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "ppf film",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf film\" (phrase) in MT | PPF | Search | EB | $39.36, 7 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 39360000,
+        "clicks": 7
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S51",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint nj\" (phrase) in MT | Tint | Search Brick 220426 | $39.26, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 39260000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S52",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "window tint linden nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint linden nj\" (phrase) in MT | Tint | Search | Multi Location | $38.77, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 38769796,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S53",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23327231724",
+        "term": "truck accessories stores",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"truck accessories stores\" (phrase) in MT | Truck Accessories |  Search | Brick | $38.06, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 38059114,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S54",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24260280425",
+        "term": "cost for ceramic coating",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"cost for ceramic coating\" (phrase) in AS | AI | Search | Ceramic Coat | SG | $37.64, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 37640000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S55",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tint windows near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint windows near me\" (phrase) in MT | Tint Search | Tinton | $37.18, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 37180000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S56",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607472",
+        "term": "running board installation",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"running board installation\" (phrase) in MT | Truck Accessories |  Search | EH | $36.94, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 36940000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S57",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "auto image brick",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image brick\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $36.72, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 36720000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S58",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "ppf near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf near me\" (phrase) in MT | PPF | Search Tinton 250326 | $36.66, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 36660000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S59",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "ppf",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf\" (phrase) in MT | PPF | Search Tinton 250326 | $36.27, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 36270000,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S60",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "master window tinting elizabeth nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"master window tinting elizabeth nj\" (phrase) in MT | Tint | Search | Sea Girt | $36.22, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 36220000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S61",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "crown tire middletown nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"crown tire middletown nj\" (phrase) in MT | Wheels Search | Tinton 200326 | $35.79, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 35785954,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S62",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "east brunswick window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"east brunswick window tint\" (phrase) in MT | Tint | Search | Multi Location | $35.76, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 35760000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S63",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "falken tires near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"falken tires near me\" (phrase) in MT | Wheels Search | Tinton 200326 | $35.68, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 35679682,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S64",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "auto image east brunswick new jersey",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image east brunswick new jersey\" (phrase) in MT | PPF | Search | EB | $35.64, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 35640000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S65",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "chameleon tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"chameleon tint near me\" (phrase) in MT | Tint | Search Brick 220426 | $34.91, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 34910000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S66",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "xpel window tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"xpel window tint near me\" (phrase) in MT | Tint | Search Brick 220426 | $34.54, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 34540000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S67",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "best truck bed covers",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"best truck bed covers\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $34.09, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 34090000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S68",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tints for cars",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tints for cars\" (phrase) in MT | Tint | Search | Sea Girt | $33.50, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 33500000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S69",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tesla model x window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tesla model x window tint\" (phrase) in MT | Tint | Search | Sea Girt | $33.24, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 33240000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S70",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24260280425",
+        "term": "supreme auto detailing mobile detailing & ceramic coatings",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"supreme auto detailing mobile detailing & ceramic coatings\" (phrase) in AS | AI | Search | Ceramic Coat | SG | $32.98, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32980000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S71",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "tinting windows near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinting windows near me\" (phrase) in MT | Tint | Search | Multi Location | $32.84, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32840000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S72",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "best window tint shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"best window tint shop near me\" (phrase) in MT | Tint | Search | Multi Location | $32.78, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32780000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S73",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "autoworks nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"autoworks nj\" (phrase) in MT | Tint | Search | Multi Location | $32.67, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32670000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S74",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "costco ocean nj tire center",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"costco ocean nj tire center\" (phrase) in MT | Wheels Search | Tinton 200326 | $32.58, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32583288,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S75",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "how dark is window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how dark is window tint\" (phrase) in MT | Tint | Search Brick 220426 | $31.45, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31450000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S76",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24265861438",
+        "term": "local ppf installers",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"local ppf installers\" (phrase) in AS | AI | Search | Ceramic Coat | TF | $31.30, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31300000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S77",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tinting toms river nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting toms river nj\" (phrase) in MT | Tint | Search Brick 220426 | $31.01, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31010000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S78",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting near me\" (phrase) in MT | Tint Search | Tinton | $30.72, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 30720000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S79",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "tire dealers near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tire dealers near me\" (phrase) in MT | Wheels Search | Tinton 200326 | $30.66, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 30660000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S80",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24260280425",
+        "term": "ceramic pro toms river",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic pro toms river\" (phrase) in AS | AI | Search | Ceramic Coat | SG | $30.61, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 30610000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S81",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint\" (phrase) in MT | Tint | Search Brick 220426 | $29.89, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 29890000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S82",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "antonella s window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"antonella s window tint\" (phrase) in MT | Tint | Search | Multi Location | $29.75, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 29750224,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S83",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607478",
+        "term": "mavis egg harbor township",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis egg harbor township\" (phrase) in MT | Rims & Tires | Search | EH | $29.56, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 29557412,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S84",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "audio install",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"audio install\" (phrase) in MT | Car audio | Search Brick 300326 | $29.37, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 29370000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S85",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "auto image tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image tint\" (phrase) in MT | Tint | Search | Sea Girt | $28.88, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28880000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S86",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tinting car windows",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinting car windows\" (phrase) in MT | Tint Search | Tinton | $28.65, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28650000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S87",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car radio installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car radio installation near me\" (phrase) in MT | Car audio | Search Tinton | $28.61, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28610000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S88",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "car window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car window tint\" (phrase) in MT | Tint | Search | EH | $28.61, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28610000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S89",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "car detailing sea girt nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car detailing sea girt nj\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $28.39, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28390000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S90",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "on site window tinting",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"on site window tinting\" (phrase) in MT | Tint | Search | EH | $28.34, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28340000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S91",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "ppf and ceramic coating",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf and ceramic coating\" (phrase) in MT | PPF | Search | EB | $28.26, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28260000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S92",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "tints",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tints\" (phrase) in MT | Tint | Search | Multi Location | $28.19, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28190000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S93",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tint windows near me within 5 mi",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint windows near me within 5 mi\" (phrase) in MT | Tint Search | Tinton | $28.03, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28030000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S94",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tints near me\" (phrase) in MT | Tint | Search | Sea Girt | $27.62, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27615720,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S95",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607472",
+        "term": "tonneau cover near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tonneau cover near me\" (phrase) in MT | Truck Accessories |  Search | EH | $27.58, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27580000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S96",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23826643649",
+        "term": "paint protection film installers near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"paint protection film installers near me\" (phrase) in MT | PPF Search Brick | $27.52, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27520000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S97",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tint shops nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shops nj\" (phrase) in MT | Tint | Search Brick 220426 | $27.39, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27390000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S98",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car radio installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car radio installation near me\" (phrase) in MT | Car Audio | Search | $27.02, 6 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27020000,
+        "clicks": 6
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S99",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinting near me\" (phrase) in MT | Tint Search | Tinton | $26.94, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26940000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S100",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tinting for cars near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting for cars near me\" (phrase) in MT | Tint | Search Brick 220426 | $26.89, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26890000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S101",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint toms river",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint toms river\" (phrase) in MT | Tint | Search Brick 220426 | $26.87, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26870000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S102",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "mavis tire matawan nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis tire matawan nj\" (phrase) in MT | Wheels Search | Tinton 200326 | $26.68, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26676266,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S103",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "car protection film",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car protection film\" (phrase) in MT | PPF | Search Tinton 250326 | $26.49, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26490000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S104",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "mavis wall nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis wall nj\" (phrase) in MT | Wheels Search | Tinton 200326 | $26.22, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 26221158,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S105",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "car tint specials near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car tint specials near me\" (phrase) in MT | Tint | Search Brick 220426 | $25.99, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 25990000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S106",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tint car windows near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint car windows near me\" (phrase) in MT | Tint Search | Tinton | $25.66, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 25660000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S107",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "ppf installer near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf installer near me\" (phrase) in MT | PPF | Search | EB | $25.60, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 25595898,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S108",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "tinted windows near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinted windows near me\" (phrase) in MT | Tint | Search | EH | $25.52, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 25520000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S109",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "tint shops",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shops\" (phrase) in MT | Tint Search | Tinton | $24.78, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 24780000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S110",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint\" (phrase) in MT | Tint | Search | EH | $24.64, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 24640000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S111",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "ppf nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf nj\" (phrase) in MT | PPF | Search Tinton 250326 | $24.15, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 24150000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S112",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "tinting my own car windows",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinting my own car windows\" (phrase) in MT | Tint | Search | EH | $24.12, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 24120000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S113",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "alpine stereo system",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"alpine stereo system\" (phrase) in MT | Car audio | Search Tinton | $23.94, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23940000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S114",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "dayton custom wheels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"dayton custom wheels\" (phrase) in MT | Wheels Search | Tinton 200326 | $23.52, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23518714,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S115",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "car wrapping nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car wrapping nj\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $23.17, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23170000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S116",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "gator truck covers",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"gator truck covers\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $23.00, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23000000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S117",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "autoworks middletown nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"autoworks middletown nj\" (phrase) in MT | Tint | Search | Multi Location | $22.68, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22677850,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S118",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "tint shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shop near me\" (phrase) in MT | Tint | Search | EH | $22.36, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22356914,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S119",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "car window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car window tinting near me\" (phrase) in MT | Tint | Search Brick 220426 | $22.18, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22175488,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S120",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "window tinting neptune nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting neptune nj\" (phrase) in MT | Tint | Search | Sea Girt | $22.02, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22020000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S121",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "pickup truck bed covers",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"pickup truck bed covers\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $21.94, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21940000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S122",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "mavis rt 70 lakewood",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis rt 70 lakewood\" (phrase) in MT | Wheels Search | Tinton 200326 | $21.85, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21850494,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S123",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "windows tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"windows tint near me\" (phrase) in MT | Tint Search | Tinton | $21.82, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21820000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S124",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607478",
+        "term": "auto rim repair shop",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto rim repair shop\" (phrase) in MT | Rims & Tires | Search | EH | $21.82, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21818714,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S125",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "auto image",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto image\" (phrase) in MT | PPF | Search Tinton 250326 | $21.72, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21720000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S126",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692691420",
+        "term": "rim repair",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"rim repair\" (phrase) in MT | Rims & Tires | Search Brick 2603 | $21.65, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21646496,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S127",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "window tinting nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting nj\" (phrase) in MT | Tint | Search | Multi Location | $21.49, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21490000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S128",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "window tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tints near me\" (phrase) in MT | Tint | Search | Multi Location | $21.37, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21370000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S129",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "ceramic tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic tint near me\" (phrase) in MT | Tint | Search | Sea Girt | $21.35, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21350000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S130",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "auto tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto tint near me\" (phrase) in MT | Tint | Search Brick 220426 | $21.23, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21230000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S131",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607478",
+        "term": "goodyear ocean city nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"goodyear ocean city nj\" (phrase) in MT | Rims & Tires | Search | EH | $21.10, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21099510,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S132",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "ceramic tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic tint\" (phrase) in MT | Tint | Search | EH | $21.07, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21070000,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S133",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "window tinting lakewood nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting lakewood nj\" (phrase) in MT | Tint | Search | Sea Girt | $20.88, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20880000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S134",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "car audio",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car audio\" (phrase) in MT | Car audio | Search Brick 300326 | $20.81, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20810000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S135",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "radio installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"radio installation near me\" (phrase) in MT | Car audio | Search Tinton | $20.47, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20474516,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S136",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car audio shops near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car audio shops near me\" (phrase) in MT | Car Audio | Search | $20.43, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20430000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S137",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23126941349",
+        "term": "vw tiguan remote start install",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"vw tiguan remote start install\" (phrase) in MT | Remote Start | Search | EB2 | $20.30, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20300000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S138",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607478",
+        "term": "shore wheels tuckerton nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"shore wheels tuckerton nj\" (phrase) in MT | Rims & Tires | Search | EH | $20.01, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20009888,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S139",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "body shop east brunswick",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"body shop east brunswick\" (phrase) in MT | PPF | Search | EB | $19.85, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19850000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S140",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "mobile tinting",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mobile tinting\" (phrase) in MT | Tint | Search Brick 220426 | $19.78, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19780000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S141",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "buy tires near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"buy tires near me\" (phrase) in MT | Wheels Search | Tinton 200326 | $19.74, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19740000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S142",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "car stereo",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car stereo\" (phrase) in MT | Car audio | Search Brick 300326 | $19.64, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19640000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S143",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tinting",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting\" (phrase) in MT | Tint Search | Tinton | $19.59, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19590000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S144",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "ppf near me for car",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf near me for car\" (phrase) in MT | PPF | Search | EB | $19.58, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19580000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S145",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "alpine screen radio",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"alpine screen radio\" (phrase) in MT | Car audio | Search Brick 300326 | $19.34, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19340000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S146",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "tire shop for truck near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tire shop for truck near me\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $18.98, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18980000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S147",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tinting marlboro nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting marlboro nj\" (phrase) in MT | Tint Search | Tinton | $18.80, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18800000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S148",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "where can i get a lift kit installed",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"where can i get a lift kit installed\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $18.77, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18770000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S149",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "tint places near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint places near me\" (phrase) in MT | Tint | Search | Multi Location | $18.67, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18670000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S150",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinting near me\" (phrase) in MT | Tint | Search | Multi Location | $18.66, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18660000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S151",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint near me\" (phrase) in MT | Tint | Search | Sea Girt | $18.65, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18650000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S152",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "bak revolver x4s maverick",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"bak revolver x4s maverick\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $18.60, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18600000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S153",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car speaker installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car speaker installation near me\" (phrase) in MT | Car Audio | Search | $18.43, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18430000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S154",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "sound waves com",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"sound waves com\" (phrase) in MT | Car audio | Search Tinton | $18.36, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18360000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S155",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tint percentage",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint percentage\" (phrase) in MT | Tint | Search | Sea Girt | $18.30, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18300000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S156",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tinting near me near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tinting near me near me\" (phrase) in MT | Tint Search | Tinton | $18.24, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18240000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S157",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "sound waves brick",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"sound waves brick\" (phrase) in MT | Car audio | Search Brick 300326 | $18.06, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18060000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S158",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "best car window tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"best car window tint near me\" (phrase) in MT | Tint | Search | Multi Location | $17.98, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17980000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S159",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "auto radio installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto radio installation near me\" (phrase) in MT | Car Audio | Search | $17.76, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17760000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S160",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "llumar tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"llumar tint\" (phrase) in MT | Tint Search | Tinton | $17.58, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17580000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S161",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "ppf shops near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ppf shops near me\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $17.55, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17550000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S162",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "auto window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto window tinting near me\" (phrase) in MT | Tint | Search | Sea Girt | $17.48, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17480000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S163",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "diamondback hd",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"diamondback hd\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $17.39, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17390000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S164",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "truck bed cover in store",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"truck bed cover in store\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $17.36, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17360000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S165",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24265854214",
+        "term": "ceramic tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic tint near me\" (phrase) in AS | AI | Search | Ceramic Coat | EB | $17.26, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17260000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S166",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tinted windows",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tinted windows\" (phrase) in MT | Tint | Search | Sea Girt | $17.12, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17120000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S167",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "mavis eatontown nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis eatontown nj\" (phrase) in MT | Wheels Search | Tinton 200326 | $17.11, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17110184,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S168",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "wrap near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"wrap near me\" (phrase) in MT | PPF | Search Tinton 250326 | $17.09, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17090000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S169",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "moto metal m0970",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"moto metal m0970\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $17.05, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17050000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S170",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "same day tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"same day tint near me\" (phrase) in MT | Tint | Search | Sea Girt | $16.96, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16960000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S171",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692691420",
+        "term": "mavis near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mavis near me\" (phrase) in MT | Rims & Tires | Search Brick 2603 | $16.94, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16939699,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S172",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "ceramic tint vs regular tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic tint vs regular tint\" (phrase) in MT | Tint | Search | EH | $16.93, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16930000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S173",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "crown tire near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"crown tire near me\" (phrase) in MT | Wheels Search | Tinton 200326 | $16.82, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16823369,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S174",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607472",
+        "term": "mte toms river",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mte toms river\" (phrase) in MT | Truck Accessories |  Search | EH | $16.82, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16820000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S175",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "can best buy install a car radio",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"can best buy install a car radio\" (phrase) in MT | Car audio | Search Tinton | $16.74, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16740000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S176",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "3m tints",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"3m tints\" (phrase) in MT | Tint Search | Tinton | $16.60, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16600000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S177",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "rim repair",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"rim repair\" (phrase) in MT | Wheels Search | Tinton 200326 | $16.60, 5 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16599562,
+        "clicks": 5
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S178",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "window tint kit for car",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint kit for car\" (phrase) in MT | Tint | Search Brick 220426 | $16.51, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16510000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S179",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "steps for trucks",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"steps for trucks\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $16.43, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16430000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S180",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692691420",
+        "term": "tire shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tire shop near me\" (phrase) in MT | Rims & Tires | Search Brick 2603 | $16.33, 4 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16327297,
+        "clicks": 4
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S181",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "car tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car tints near me\" (phrase) in MT | Tint | Search | Sea Girt | $16.29, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16290000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S182",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "manual retractable tonneau cover",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"manual retractable tonneau cover\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $16.27, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16270000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S183",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car audio shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car audio shop near me\" (phrase) in MT | Car audio | Search Tinton | $16.26, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16260000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S184",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23693339920",
+        "term": "tint wrapture",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint wrapture\" (phrase) in MT | PPF | Search Tinton 250326 | $16.25, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16250000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S185",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "24265861438",
+        "term": "armor shield ix",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"armor shield ix\" (phrase) in AS | AI | Search | Ceramic Coat | TF | $16.24, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16240000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S186",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "ceramic tints near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"ceramic tints near me\" (phrase) in MT | Tint | Search | Multi Location | $16.21, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16210000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S187",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "car sound system shop near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car sound system shop near me\" (phrase) in MT | Car audio | Search Tinton | $16.20, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16200000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S188",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "mobile tint near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"mobile tint near me\" (phrase) in MT | Tint | Search | EH | $16.19, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16190000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S189",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "paint protect film",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"paint protect film\" (phrase) in MT | PPF | Search | EB | $16.12, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16117053,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S190",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23723185362",
+        "term": "running boards ram 1500",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"running boards ram 1500\" (phrase) in MT | Truck Accessories |  Search | Tinton | 0406 | $16.00, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 16000000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S191",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23459175092",
+        "term": "auto audio",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"auto audio\" (phrase) in MT | Car audio | Search Tinton | $15.90, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15900000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S192",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23692720067",
+        "term": "xpel ppf",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"xpel ppf\" (phrase) in MT | PPF Search | Sea Girt | 2603 | $15.89, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15890000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S193",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "vehicle window tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"vehicle window tinting near me\" (phrase) in MT | Tint | Search Brick 220426 | $15.79, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15790000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S194",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "tint rebel reviews",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint rebel reviews\" (phrase) in MT | Tint | Search | Sea Girt | $15.75, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15750000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S195",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "best car tinting places near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"best car tinting places near me\" (phrase) in MT | Tint | Search Brick 220426 | $15.72, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15720000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S196",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23327231724",
+        "term": "where can i get a tonneau cover install near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"where can i get a tonneau cover install near me\" (phrase) in MT | Truck Accessories |  Search | Brick | $15.70, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15700000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S197",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23126941349",
+        "term": "remote starters near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"remote starters near me\" (phrase) in MT | Remote Start | Search | EB2 | $15.67, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15670000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S198",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23950607727",
+        "term": "dynamic tint turnersville nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"dynamic tint turnersville nj\" (phrase) in MT | Tint | Search | EH | $15.64, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15638777,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S199",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "car tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car tint\" (phrase) in MT | Tint | Search | Multi Location | $15.59, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15590000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S200",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19655436401",
+        "term": "xpel prime xr plus near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"xpel prime xr plus near me\" (phrase) in MT | PPF | Search | EB | $15.56, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15560000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S201",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23703579085",
+        "term": "upgrade car screen to carplay",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"upgrade car screen to carplay\" (phrase) in MT | Car audio | Search Brick 300326 | $15.56, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15560000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S202",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23662803482",
+        "term": "window tint",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint\" (phrase) in MT | Tint Search | Tinton | $15.42, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15420000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S203",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "andy's window tint clifton nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"andy's window tint clifton nj\" (phrase) in MT | Tint | Search | Multi Location | $15.39, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15390000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S204",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23600872497",
+        "term": "window tint jeep wrangler",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"window tint jeep wrangler\" (phrase) in MT | Tint | Search | Sea Girt | $15.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15320000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S205",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tint shops",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint shops\" (phrase) in MT | Tint | Search Brick 220426 | $15.31, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15310000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S206",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23774095872",
+        "term": "tint options",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"tint options\" (phrase) in MT | Tint | Search Brick 220426 | $15.12, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15120000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S207",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23791977319",
+        "term": "car tinting near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car tinting near me\" (phrase) in MT | Tint | Search | Multi Location | $15.07, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15070000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S208",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "23679689245",
+        "term": "used tires near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"used tires near me\" (phrase) in MT | Wheels Search | Tinton 200326 | $15.03, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15030000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-S209",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "3442012546",
+        "campaign_id": "19583093476",
+        "term": "car amp installation near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"car amp installation near me\" (phrase) in MT | Car Audio | Search | $15.02, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15020000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-A1",
+      "action": {
+        "type": "audience_bid_down",
+        "customer_id": "3442012546",
+        "resource_name": "customers/3442012546/adGroupCriteria/197916595361~1939002220953",
+        "segment_key": "3442012546~197916595361~1939002220953",
+        "current_bid_modifier": 1.0,
+        "new_bid_modifier": 0.95
+      },
+      "summary": "Audience \"All Users of Auto Image\" (MT | Tint | Retargeting/Ad group 1) bid modifier 1.00->0.95 (-5%) | $143.02, 0 conv",
+      "detail": {
+        "cost_micros": 143020743,
+        "conversions": 0.0,
+        "cpa": null,
+        "campaign_cpa": null
+      },
+      "section": "audiences",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "3442012546-D1",
+      "action": {
+        "type": "pause_ad",
+        "customer_id": "3442012546",
+        "ad_group_id": "197599515591",
+        "ad_id": "802146357588"
+      },
+      "summary": "Pause DISAPPROVED ad 802146357588 (MT | Detailing | Search |  Sea Girt 2603/Ad group 1) - then fix & resubmit",
+      "detail": {
+        "approval_status": "DISAPPROVED",
+        "ad_type": "RESPONSIVE_SEARCH_AD"
+      },
+      "section": "ads_assets",
+      "customer_id": "3442012546"
+    },
+    {
+      "id": "2837637005-S1",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro near me\" (phrase) in ET_ Branded Search | $31.22, 64 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31224538,
+        "clicks": 64
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "2837637005-S2",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro freehold nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro freehold nj\" (phrase) in ET_ Branded Search | $27.65, 14 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27651818,
+        "clicks": 14
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "2837637005-S3",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro hours",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro hours\" (phrase) in ET_ Branded Search | $24.54, 10 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 24543565,
+        "clicks": 10
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "2837637005-S4",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro brick nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro brick nj\" (phrase) in ET_ Branded Search | $22.29, 28 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22286954,
+        "clicks": 28
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "2837637005-S5",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro nyc",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro nyc\" (phrase) in ET_ Branded Search | $18.32, 8 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18320000,
+        "clicks": 8
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "2837637005-S6",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "2837637005",
+        "campaign_id": "20562802515",
+        "term": "eat clean bro shoprite",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"eat clean bro shoprite\" (phrase) in ET_ Branded Search | $11.72, 15 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 11716882,
+        "clicks": 15
+      },
+      "section": "search_terms",
+      "customer_id": "2837637005"
+    },
+    {
+      "id": "6983036531-K1",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "21258431",
+        "keyword_text": "solar panel installation",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"solar panel installation\" PHRASE->EXACT (AS | SPS | Search | EVG / Ad group 1) | CPA $1,188.14 vs target $50.00",
+      "detail": {
+        "cost_micros": 1188136000,
+        "clicks": 21,
+        "conversions": 1.0,
+        "cpa": 1188.136,
+        "quality_score": 1
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-K2",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "111234942",
+        "keyword_text": "solar panels",
+        "current_match_type": "EXACT",
+        "new_match_type": "PAUSED",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"solar panels\" EXACT->PAUSED (AS | SPS | Search | EVG / Ad group 1) | CPA $330.99 vs target $50.00",
+      "detail": {
+        "cost_micros": 661980688,
+        "clicks": 9,
+        "conversions": 2.0,
+        "cpa": 330.990344,
+        "quality_score": 1
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-K3",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "318377623",
+        "keyword_text": "residential solar panels",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"residential solar panels\" PHRASE->EXACT (AS | SPS | Search | EVG / Ad group 1) | CPA $91.40 vs target $50.00",
+      "detail": {
+        "cost_micros": 91400000,
+        "clicks": 7,
+        "conversions": 1.0,
+        "cpa": 91.4,
+        "quality_score": 1
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-K4",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "498797023",
+        "keyword_text": "home solar system",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"home solar system\" PHRASE->EXACT (AS | SPS | Search | EVG / Ad group 1) | CPA $147.21 vs target $50.00",
+      "detail": {
+        "cost_micros": 147210000,
+        "clicks": 5,
+        "conversions": 1.0,
+        "cpa": 147.21,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-K5",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "1034616085",
+        "keyword_text": "solar panel companies",
+        "current_match_type": "PHRASE",
+        "new_match_type": "EXACT",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"solar panel companies\" PHRASE->EXACT (AS | SPS | Search | EVG / Ad group 1) | CPA $139.91 vs target $50.00",
+      "detail": {
+        "cost_micros": 979400296,
+        "clicks": 27,
+        "conversions": 7.0,
+        "cpa": 139.914328,
+        "quality_score": 3
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-K6",
+      "action": {
+        "type": "demote_keyword",
+        "customer_id": "6983036531",
+        "ad_group_id": "202015561160",
+        "criterion_id": "1903715069",
+        "keyword_text": "solar companies",
+        "current_match_type": "EXACT",
+        "new_match_type": "PAUSED",
+        "cpc_bid_micros": 10000
+      },
+      "summary": "Keyword \"solar companies\" EXACT->PAUSED (AS | SPS | Search | EVG / Ad group 1) | CPA $283.60 vs target $50.00",
+      "detail": {
+        "cost_micros": 283600000,
+        "clicks": 2,
+        "conversions": 1.0,
+        "cpa": 283.6,
+        "quality_score": 4
+      },
+      "section": "keywords",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S1",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "best solar generator for home backup",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"best solar generator for home backup\" (phrase) in AS | SPS | Search | EVG | $152.67, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 152673024,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S2",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar calculator by zip code",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar calculator by zip code\" (phrase) in AS | SPS | Search | EVG | $152.11, 3 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 152110000,
+        "clicks": 3
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S3",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar power companies near me",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar power companies near me\" (phrase) in AS | SPS | Search | EVG | $136.83, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 136830000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S4",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "cheapest solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"cheapest solar panels\" (phrase) in AS | SPS | Search | EVG | $101.62, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 101620000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S5",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "home solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"home solar panels\" (phrase) in AS | SPS | Search | EVG | $100.43, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 100430000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S6",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel roof cost",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel roof cost\" (phrase) in AS | SPS | Search | EVG | $98.34, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 98340000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S7",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "residential solar tracker",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"residential solar tracker\" (phrase) in AS | SPS | Search | EVG | $88.75, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 88745104,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S8",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panels new jersey",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panels new jersey\" (phrase) in AS | SPS | Search | EVG | $86.99, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 86990000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S9",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "clearsolar us",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"clearsolar us\" (phrase) in AS | SPS | Search | EVG | $79.27, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 79270000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S10",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "velocity solar nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"velocity solar nj\" (phrase) in AS | SPS | Search | EVG | $74.55, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 74550000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S11",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panels for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panels for home\" (phrase) in AS | SPS | Search | EVG | $74.19, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 74190000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S12",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "can i get solar panels for free",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"can i get solar panels for free\" (phrase) in AS | SPS | Search | EVG | $68.69, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 68690000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S13",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel price",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel price\" (phrase) in AS | SPS | Search | EVG | $56.92, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 56920000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S14",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar company",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar company\" (phrase) in AS | SPS | Search | EVG | $54.88, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 54880000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S15",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar generator for house",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar generator for house\" (phrase) in AS | SPS | Search | EVG | $54.04, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 54040000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S16",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel\" (phrase) in AS | SPS | Search | EVG | $47.11, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 47110000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S17",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel roof replacement",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel roof replacement\" (phrase) in AS | SPS | Search | EVG | $45.75, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 45750000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S18",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "home solar system",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"home solar system\" (phrase) in AS | SPS | Search | EVG | $45.08, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 45080000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S19",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "free solar new jersey",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"free solar new jersey\" (phrase) in AS | SPS | Search | EVG | $43.51, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 43510000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S20",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "sustainable solar solutions",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"sustainable solar solutions\" (phrase) in AS | SPS | Search | EVG | $43.42, 2 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 43420000,
+        "clicks": 2
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S21",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar system for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar system for home\" (phrase) in AS | SPS | Search | EVG | $41.63, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 41630000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S22",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar installation",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar installation\" (phrase) in AS | SPS | Search | EVG | $39.91, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 39910000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S23",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar simplified reviews",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar simplified reviews\" (phrase) in AS | SPS | Search | EVG | $32.36, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 32360000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S24",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "simply solar nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"simply solar nj\" (phrase) in AS | SPS | Search | EVG | $31.95, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31950000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S25",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "how much does solar panel installation cost",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how much does solar panel installation cost\" (phrase) in AS | SPS | Search | EVG | $31.48, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 31480000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S26",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "5kw solar system",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"5kw solar system\" (phrase) in AS | SPS | Search | EVG | $28.49, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 28490000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S27",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "how to get free solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how to get free solar panels\" (phrase) in AS | SPS | Search | EVG | $27.70, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27700000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S28",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solyndra solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solyndra solar panels\" (phrase) in AS | SPS | Search | EVG | $27.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27320000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S29",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "free roof with solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"free roof with solar panels\" (phrase) in AS | SPS | Search | EVG | $27.08, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 27080000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S30",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar nj",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar nj\" (phrase) in AS | SPS | Search | EVG | $25.29, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 25290000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S31",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel system for house",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel system for house\" (phrase) in AS | SPS | Search | EVG | $23.74, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23740000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S32",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "green volt energy",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"green volt energy\" (phrase) in AS | SPS | Search | EVG | $23.00, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 23000000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S33",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "average cost of solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"average cost of solar panels\" (phrase) in AS | SPS | Search | EVG | $22.17, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 22170000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S34",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel installation",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel installation\" (phrase) in AS | SPS | Search | EVG | $21.50, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21500000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S35",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "shop deals on solar panels for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"shop deals on solar panels for home\" (phrase) in AS | SPS | Search | EVG | $21.03, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 21030000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S36",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "how much do solar panels cost",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how much do solar panels cost\" (phrase) in AS | SPS | Search | EVG | $20.99, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20990000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S37",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "how much do solar panels cost for a 3000 square foot house",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how much do solar panels cost for a 3000 square foot house\" (phrase) in AS | SPS | Search | EVG | $20.30, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 20300000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S38",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "whole home solar powered generator",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"whole home solar powered generator\" (phrase) in AS | SPS | Search | EVG | $19.50, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19500000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S39",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "cw energy solar panels",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"cw energy solar panels\" (phrase) in AS | SPS | Search | EVG | $19.44, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19440000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S40",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar powered generator for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar powered generator for home\" (phrase) in AS | SPS | Search | EVG | $19.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 19320000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S41",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "10 kw solar system",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"10 kw solar system\" (phrase) in AS | SPS | Search | EVG | $18.57, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18570000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S42",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar hotline",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar hotline\" (phrase) in AS | SPS | Search | EVG | $18.33, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 18330000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S43",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "average solar cost for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"average solar cost for home\" (phrase) in AS | SPS | Search | EVG | $17.32, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 17320000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S44",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "how much does solar cost",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"how much does solar cost\" (phrase) in AS | SPS | Search | EVG | $15.89, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15890000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-S45",
+      "action": {
+        "type": "negate_search_term",
+        "customer_id": "6983036531",
+        "campaign_id": "24170200482",
+        "term": "solar panel cost for home",
+        "match_type": "PHRASE"
+      },
+      "summary": "Negate \"solar panel cost for home\" (phrase) in AS | SPS | Search | EVG | $15.43, 1 clicks, 0 conv",
+      "detail": {
+        "cost_micros": 15430000,
+        "clicks": 1
+      },
+      "section": "search_terms",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-A1",
+      "action": {
+        "type": "audience_bid_down",
+        "customer_id": "6983036531",
+        "resource_name": "customers/6983036531/adGroupCriteria/206326341104~51668100535",
+        "segment_key": "6983036531~206326341104~51668100535",
+        "current_bid_modifier": 1.0,
+        "new_bid_modifier": 0.95
+      },
+      "summary": "Audience \"uservertical::90700\" (AS | SPS | DGen | EVG/Ad group 1) bid modifier 1.00->0.95 (-5%) | $54.99, 0 conv",
+      "detail": {
+        "cost_micros": 54994633,
+        "conversions": 0.0,
+        "cpa": null,
+        "campaign_cpa": 104.45799442857142
+      },
+      "section": "audiences",
+      "customer_id": "6983036531"
+    },
+    {
+      "id": "6983036531-A2",
+      "action": {
+        "type": "audience_bid_down",
+        "customer_id": "6983036531",
+        "resource_name": "customers/6983036531/adGroupCriteria/206326341104~51668101015",
+        "segment_key": "6983036531~206326341104~51668101015",
+        "current_bid_modifier": 1.0,
+        "new_bid_modifier": 0.95
+      },
+      "summary": "Audience \"uservertical::91000\" (AS | SPS | DGen | EVG/Ad group 1) bid modifier 1.00->0.95 (-5%) | $26.55, 0 conv",
+      "detail": {
+        "cost_micros": 26546620,
+        "conversions": 0.0,
+        "cpa": null,
+        "campaign_cpa": 104.45799442857142
+      },
+      "section": "audiences",
+      "customer_id": "6983036531"
+    }
+  ]
 }

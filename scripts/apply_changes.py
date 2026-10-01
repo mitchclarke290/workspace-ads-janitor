@@ -28,53 +28,58 @@ import sys
 from datetime import datetime
 
 from gads_common import (
-    CONFIG, CUSTOMER_ID, MEMORY, RUNS, build_client, load_json, now_iso, save_json,
+    CONFIG, CUSTOMER_IDS, MEMORY, RUNS, build_client, customer_label, load_json,
+    now_iso, save_json,
 )
 
 PENDING = MEMORY / "pending-approvals.json"
 AUDIENCE_STATE = MEMORY / "audience-bid-state.json"
 
 
-# --------------------------------------------------------------------------- #
-# Describers (phase 1) and executors (phase 2), keyed by action type
-# --------------------------------------------------------------------------- #
+def action_cid(a):
+    cid = str(a.get("customer_id") or "")
+    if not cid:
+        raise ValueError("action missing customer_id")
+    return cid
 
 def describe(item):
     a = item["action"]
     t = a["type"]
+    acct = customer_label(action_cid(a))
     if t == "demote_keyword":
         if a["new_match_type"] == "PAUSED":
-            return (f'{item["id"]}: PAUSE keyword "{a["keyword_text"]}" (EXACT), '
+            return (f'{item["id"]} [{acct}]: PAUSE keyword "{a["keyword_text"]}" (EXACT), '
                     f'ad group {a["ad_group_id"]}, criterion {a["criterion_id"]}')
-        return (f'{item["id"]}: keyword "{a["keyword_text"]}" '
+        return (f'{item["id"]} [{acct}]: keyword "{a["keyword_text"]}" '
                 f'{a["current_match_type"]} -> {a["new_match_type"]} '
                 f'(create new {a["new_match_type"]} criterion, pause old '
                 f'{a["criterion_id"]}) in ad group {a["ad_group_id"]}')
     if t == "negate_search_term":
-        return (f'{item["id"]}: add campaign-level PHRASE negative "{a["term"]}" '
+        return (f'{item["id"]} [{acct}]: add campaign-level PHRASE negative "{a["term"]}" '
                 f'to campaign {a["campaign_id"]}')
     if t == "audience_bid_down":
-        return (f'{item["id"]}: audience {a["segment_key"]} bid modifier '
+        return (f'{item["id"]} [{acct}]: audience {a["segment_key"]} bid modifier '
                 f'{a["current_bid_modifier"]:.2f} -> {a["new_bid_modifier"]:.2f} (-5%)')
     if t == "exclude_geo":
-        return (f'{item["id"]}: exclude geoTargetConstants/{a["geo_target_constant_id"]} '
+        return (f'{item["id"]} [{acct}]: exclude geoTargetConstants/{a["geo_target_constant_id"]} '
                 f'from campaign {a["campaign_id"]}')
     if t == "pause_ad":
-        return f'{item["id"]}: pause ad {a["ad_id"]} in ad group {a["ad_group_id"]}'
-    return f'{item["id"]}: UNSUPPORTED action type "{t}"'
+        return f'{item["id"]} [{acct}]: pause ad {a["ad_id"]} in ad group {a["ad_group_id"]}'
+    return f'{item["id"]} [{acct}]: UNSUPPORTED action type "{t}"'
 
 
 def exec_demote_keyword(client, a):
     from google.protobuf.field_mask_pb2 import FieldMask
+    cid = action_cid(a)
     svc = client.get_service("AdGroupCriterionService")
-    agc_path = svc.ad_group_criterion_path(CUSTOMER_ID, a["ad_group_id"], a["criterion_id"])
+    agc_path = svc.ad_group_criterion_path(cid, a["ad_group_id"], a["criterion_id"])
     ops = []
 
     if a["new_match_type"] != "PAUSED":
         create = client.get_type("AdGroupCriterionOperation")
         c = create.create
         c.ad_group = client.get_service("AdGroupService").ad_group_path(
-            CUSTOMER_ID, a["ad_group_id"])
+            cid, a["ad_group_id"])
         c.status = client.enums.AdGroupCriterionStatusEnum.ENABLED
         c.keyword.text = a["keyword_text"]
         c.keyword.match_type = getattr(
@@ -90,20 +95,21 @@ def exec_demote_keyword(client, a):
     client.copy_from(pause.update_mask, FieldMask(paths=["status"]))
     ops.append(pause)
 
-    res = svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=ops)
+    res = svc.mutate_ad_group_criteria(customer_id=cid, operations=ops)
     return [r.resource_name for r in res.results]
 
 
 def exec_negate_search_term(client, a):
+    cid = action_cid(a)
     svc = client.get_service("CampaignCriterionService")
     op = client.get_type("CampaignCriterionOperation")
     c = op.create
     c.campaign = client.get_service("CampaignService").campaign_path(
-        CUSTOMER_ID, a["campaign_id"])
+        cid, a["campaign_id"])
     c.negative = True
     c.keyword.text = a["term"]
     c.keyword.match_type = client.enums.KeywordMatchTypeEnum.PHRASE
-    res = svc.mutate_campaign_criteria(customer_id=CUSTOMER_ID, operations=[op])
+    res = svc.mutate_campaign_criteria(customer_id=cid, operations=[op])
     return [r.resource_name for r in res.results]
 
 
@@ -115,7 +121,7 @@ def exec_audience_bid_down(client, a):
     u.resource_name = a["resource_name"]
     u.bid_modifier = a["new_bid_modifier"]
     client.copy_from(op.update_mask, FieldMask(paths=["bid_modifier"]))
-    res = svc.mutate_ad_group_criteria(customer_id=CUSTOMER_ID, operations=[op])
+    res = svc.mutate_ad_group_criteria(customer_id=action_cid(a), operations=[op])
 
     state = load_json(AUDIENCE_STATE, {"segments": {}})
     state["segments"][a["segment_key"]] = datetime.now().date().isoformat()
@@ -124,27 +130,29 @@ def exec_audience_bid_down(client, a):
 
 
 def exec_exclude_geo(client, a):
+    cid = action_cid(a)
     svc = client.get_service("CampaignCriterionService")
     op = client.get_type("CampaignCriterionOperation")
     c = op.create
     c.campaign = client.get_service("CampaignService").campaign_path(
-        CUSTOMER_ID, a["campaign_id"])
+        cid, a["campaign_id"])
     c.negative = True
     c.location.geo_target_constant = (
         f"geoTargetConstants/{a['geo_target_constant_id']}")
-    res = svc.mutate_campaign_criteria(customer_id=CUSTOMER_ID, operations=[op])
+    res = svc.mutate_campaign_criteria(customer_id=cid, operations=[op])
     return [r.resource_name for r in res.results]
 
 
 def exec_pause_ad(client, a):
     from google.protobuf.field_mask_pb2 import FieldMask
+    cid = action_cid(a)
     svc = client.get_service("AdGroupAdService")
     op = client.get_type("AdGroupAdOperation")
     u = op.update
-    u.resource_name = svc.ad_group_ad_path(CUSTOMER_ID, a["ad_group_id"], a["ad_id"])
+    u.resource_name = svc.ad_group_ad_path(cid, a["ad_group_id"], a["ad_id"])
     u.status = client.enums.AdGroupAdStatusEnum.PAUSED
     client.copy_from(op.update_mask, FieldMask(paths=["status"]))
-    res = svc.mutate_ad_group_ads(customer_id=CUSTOMER_ID, operations=[op])
+    res = svc.mutate_ad_group_ads(customer_id=cid, operations=[op])
     return [r.resource_name for r in res.results]
 
 
@@ -154,7 +162,6 @@ EXECUTORS = {
     "demote_keyword": exec_demote_keyword,
     "negate_search_term": exec_negate_search_term,
     "audience_bid_down": exec_audience_bid_down,
-    "exclude_geo": exec_exclude_geo,
     "pause_ad": exec_pause_ad,
 }
 
@@ -177,8 +184,9 @@ def main():
         sys.exit(f"Pending proposals expired at {pending['expires_at']}. "
                  "Run a fresh audit - do not apply stale changes.")
 
-    if pending["customer_id"] != CUSTOMER_ID:
-        sys.exit("Pending proposals were generated for a different customer id. Aborting.")
+    pending_cids = set(str(c) for c in pending.get("customer_ids") or [pending.get("customer_id")])
+    if pending_cids - set(CUSTOMER_IDS):
+        sys.exit("Pending proposals include a customer id that is not in the current allowlist. Aborting.")
 
     by_id = {p["id"]: p for p in pending["proposals"]}
     if args.ids.strip().upper() == "ALL":
@@ -196,6 +204,13 @@ def main():
                  "Split into batches.")
 
     selected = [by_id[i] for i in ids]
+    geos = [item["id"] for item in selected if item["action"].get("type") == "exclude_geo"]
+    if geos:
+        sys.exit("Geo exclusions are no longer recommended: " + ", ".join(geos))
+    for item in selected:
+        cid = action_cid(item["action"])
+        if cid not in CUSTOMER_IDS:
+            sys.exit(f"Proposal {item['id']} is for {cid}, which is not in the current allowlist.")
 
     if not args.execute:
         # Phase 1: verbatim echo for Confirmation 2
@@ -203,7 +218,7 @@ def main():
         pending["selected_ids"] = ids
         pending["selected_at"] = now_iso()
         save_json(PENDING, pending)
-        print(f"DRY RUN - exact change set for account {CUSTOMER_ID} "
+        print(f"DRY RUN - exact change set for {len(pending_cids)} account(s) "
               f"({len(selected)} action(s)):\n")
         for item in selected:
             print("  " + describe(item))
@@ -222,7 +237,7 @@ def main():
 
     client = build_client()
     ts = datetime.now().strftime("%Y-%m-%d-%H%M")
-    log = [f"# Change log - {ts} - account {CUSTOMER_ID}", ""]
+    log = [f"# Change log - {ts} - accounts {', '.join(sorted(pending_cids))}", ""]
     ok, failed = [], []
 
     for item in selected:

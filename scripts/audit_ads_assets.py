@@ -4,7 +4,7 @@ Ads & assets audit:
   - Disapproved / limited ads -> pause proposal + fix flag
   - RSA assets with "LOW" performance label -> review flags
 """
-from gads_common import CUSTOMER_ID, Findings, THRESHOLDS, gaql
+from gads_common import Findings, THRESHOLDS, gaql, get_customer_id
 
 
 def run(client):
@@ -29,7 +29,7 @@ def run(client):
             f.add(
                 {
                     "type": "pause_ad",
-                    "customer_id": CUSTOMER_ID,
+                    "customer_id": get_customer_id(),
                     "ad_group_id": str(r.ad_group.id),
                     "ad_id": str(r.ad_group_ad.ad.id),
                 },

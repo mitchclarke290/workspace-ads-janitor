@@ -3,13 +3,13 @@
 Dayparting + device audit:
   - Hours of day with meaningful spend and zero conversions -> ad-schedule
     bid-down suggestions
-  - Devices with CPA >= X% worse than the account -> device bid-down suggestions
+  - Devices with CPL >= X% worse than the account -> device bid-down suggestions
 
 Both are "other adjustments": suggestions only, double-confirm gated.
 """
 from collections import defaultdict
 
-from gads_common import CUSTOMER_ID, Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql
+from gads_common import Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql
 
 DEVICE_NAMES = {"MOBILE": "Mobile", "DESKTOP": "Desktop", "TABLET": "Tablet"}
 
@@ -82,7 +82,7 @@ def run(client):
             continue
         reason = (
             f"{fmt_money(d['cost'])}, 0 conv" if d["conv"] == 0
-            else f"CPA ${dev_cpa:,.2f} vs account ${account_cpa:,.2f}"
+            else f"CPL ${dev_cpa:,.2f} vs account ${account_cpa:,.2f}"
         )
         f.add(
             {

@@ -10,8 +10,8 @@ they become eligible again.
 from datetime import date, datetime, timedelta
 
 from gads_common import (
-    CUSTOMER_ID, Findings, MEMORY, THRESHOLDS, cpa, date_range, fmt_money,
-    gaql, load_json,
+    Findings, MEMORY, THRESHOLDS, cpa, date_range, fmt_money,
+    gaql, get_customer_id, load_json,
 )
 
 STATE_PATH = MEMORY / "audience-bid-state.json"
@@ -59,12 +59,12 @@ def run(client):
         conv = r.metrics.conversions
         seg_cpa = cpa(cost, conv)
         base = camp_cpa.get(str(r.campaign.id))
-        seg_key = f"{r.ad_group.id}~{crit.criterion_id}"
+        seg_key = f"{get_customer_id()}~{r.ad_group.id}~{crit.criterion_id}"
         name = crit.display_name or f"criterion {crit.criterion_id}"
 
         if cost < t["min_spend"] * 1_000_000:
             continue
-        # Underperforming = zero conv on real spend, or CPA >= X% worse than campaign
+        # Underperforming = zero conv on real spend, or CPL >= X% worse than campaign
         bad = (conv == 0) or (
             seg_cpa is not None and base
             and seg_cpa >= base * (1 + t["cpa_worse_pct"] / 100)
@@ -89,12 +89,12 @@ def run(client):
         new = round(current * t["bid_down_factor"], 4)
         reason = (
             f"{fmt_money(cost)}, 0 conv" if conv == 0
-            else f"CPA ${seg_cpa:,.2f} vs campaign ${base:,.2f}"
+            else f"CPL ${seg_cpa:,.2f} vs campaign ${base:,.2f}"
         )
         f.add(
             {
                 "type": "audience_bid_down",
-                "customer_id": CUSTOMER_ID,
+                "customer_id": get_customer_id(),
                 "resource_name": crit.resource_name,
                 "segment_key": seg_key,
                 "current_bid_modifier": current,

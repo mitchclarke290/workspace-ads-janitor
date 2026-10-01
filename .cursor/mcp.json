@@ -17,24 +17,13 @@
       }
     },
     "openclaw": {
-      "url": "http://127.0.0.1:57730/mcp",
+      "url": "http://127.0.0.1:63861/mcp",
       "alwaysLoad": true,
       "headers": {
-        "Authorization": "Bearer 4aaf44fb07cf58665fb8f5830a581b5732e267b0825de87b28e6d204a121c627",
-        "x-session-key": "agent:ads-janitor:cron:f08a23c3-100d-4261-8a47-8a744783ad53:run:9b1d352b-550f-456c-bb0b-a7bb72340df8",
-        "x-openclaw-session-id": "9b1d352b-550f-456c-bb0b-a7bb72340df8",
-        "x-openclaw-agent-id": "ads-janitor",
-        "x-openclaw-account-id": "",
-        "x-openclaw-message-channel": "slack",
-        "x-openclaw-current-channel-id": "",
-        "x-openclaw-current-thread-ts": "",
-        "x-openclaw-current-message-id": "",
-        "x-openclaw-current-inbound-audio": "",
-        "x-openclaw-inbound-event-kind": "",
-        "x-openclaw-source-reply-delivery-mode": "",
-        "x-openclaw-require-explicit-message-target": "true",
-        "x-openclaw-cli-capture-key": ""
-      }
+        "Authorization": "Bearer 929abe5a909d75ef8179e513807d9994f45327fe0c466e0e6e53fa36c271b17d",
+        "x-openclaw-cli-capture-key": "7607aa0e-e8e5-4eff-aca8-c715ec8e5564"
+      },
+      "timeout": 3610000
     }
   }
 }

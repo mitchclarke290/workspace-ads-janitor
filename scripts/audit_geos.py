@@ -5,7 +5,7 @@ Geo audit: targeted locations bleeding spend -> exclusion proposals
 """
 import re
 
-from gads_common import CUSTOMER_ID, Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql
+from gads_common import Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql, get_customer_id
 
 
 def geo_names(client, ids):
@@ -22,7 +22,7 @@ def geo_names(client, ids):
 
 def run(client):
     t = THRESHOLDS["geos"]
-    target_cpa = THRESHOLDS["target_cpa"]
+    target_cpa = THRESHOLDS["target_cpl"]
     start, end = date_range()
     f = Findings("G")
 
@@ -56,12 +56,12 @@ def run(client):
         where = names.get(geo_id, f"geo {geo_id}")
         reason = (
             f"{fmt_money(cost)}, 0 conv" if conv == 0
-            else f"CPA ${this_cpa:,.2f} vs target ${THRESHOLDS['target_cpa']:,.2f}"
+            else f"CPL ${this_cpa:,.2f} vs target ${THRESHOLDS['target_cpl']:,.2f}"
         )
         f.add(
             {
                 "type": "exclude_geo",
-                "customer_id": CUSTOMER_ID,
+                "customer_id": get_customer_id(),
                 "campaign_id": campaign_id,
                 "geo_target_constant_id": geo_id,
             },

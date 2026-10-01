@@ -1,7 +1,7 @@
 {
-  "_note": "Tunable audit thresholds. Dollar values in account currency. target_cpa drives 'CPA too high' checks; set to your real target when moving to production.",
+  "_note": "Tunable audit thresholds. Dollar values in account currency. target_cpl is the fallback cost-per-lead target when the benchmarks sheet cell is blank. Cost per lead is spend divided by conversions until qualified-lead data exists.",
   "lookback_days": 28,
-  "target_cpa": 50.0,
+  "target_cpl": 50.0,
   "keywords": {
     "min_spend": 25.0,
     "cpa_multiplier": 1.5,

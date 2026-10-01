@@ -5,7 +5,7 @@ Search-term audit: wasteful queries -> campaign-level PHRASE negative proposals.
 Policy (AGENTS.md rule 4): phrase-match negatives only.
 Skips terms already covered by an existing campaign negative.
 """
-from gads_common import CUSTOMER_ID, Findings, THRESHOLDS, date_range, fmt_money, gaql
+from gads_common import Findings, THRESHOLDS, date_range, fmt_money, gaql, get_customer_id
 
 
 def phrase_covers(negative, term):
@@ -82,7 +82,7 @@ def run(client):
         f.add(
             {
                 "type": "negate_search_term",
-                "customer_id": CUSTOMER_ID,
+                "customer_id": get_customer_id(),
                 "campaign_id": campaign_id,
                 "term": term,
                 "match_type": "PHRASE",

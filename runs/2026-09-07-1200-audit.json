@@ -1,0 +1,53 @@
+{
+  "generated_at": "2026-09-07T12:00:05-04:00",
+  "results": {
+    "conversion_health": {
+      "title": "Conversion tracking",
+      "proposals": [],
+      "flags": [],
+      "error": "PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n]"
+    },
+    "keywords": {
+      "title": "Keywords (demotion ladder)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    },
+    "search_terms": {
+      "title": "Search terms (phrase negatives)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    },
+    "audiences": {
+      "title": "Audiences (-5% / 21-day cadence)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    },
+    "geos": {
+      "title": "Geos (exclusions)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    },
+    "ads_assets": {
+      "title": "Ads & assets (disapprovals, low assets)",
+      "proposals": [],
+      "flags": [],
+      "error": "PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n]"
+    },
+    "spend": {
+      "title": "Spend report (over/underspend - report only)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    },
+    "schedule_devices": {
+      "title": "Dayparting & devices (suggestions)",
+      "proposals": [],
+      "flags": [],
+      "skipped": "conversion tracking suspect - health check failed (PermissionDenied: 403 Request had insufficient authentication scopes. [reason: \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\"\ndomain: \"googleapis.com\"\nmetadata {\n  key: \"service\"\n  value: \"googleads.googleapis.com\"\n}\nmetadata {\n  key: \"method\"\n  value: \"google.ads.googleads.v25.services.GoogleAdsService.SearchStream\"\n}\n])"
+    }
+  }
+}

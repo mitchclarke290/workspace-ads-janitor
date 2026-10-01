@@ -8,14 +8,14 @@ Demotion policy (AGENTS.md rule 3): one step per cycle, never skip.
 """
 from collections import defaultdict
 
-from gads_common import CUSTOMER_ID, Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql
+from gads_common import Findings, THRESHOLDS, cpa, date_range, fmt_money, gaql, get_customer_id, target_cpl
 
 NEXT_STEP = {"BROAD": "PHRASE", "PHRASE": "EXACT", "EXACT": "PAUSED"}
 
 
 def run(client):
     t = THRESHOLDS["keywords"]
-    target_cpa = THRESHOLDS["target_cpa"]
+    target = target_cpl()
     start, end = date_range()
     f = Findings("K")
     flags = Findings("KF")  # review-only flags (QS, duplicates) - no mutation
@@ -64,12 +64,12 @@ def run(client):
                 {"quality_score": qs, "campaign": r.campaign.name},
             )
 
-        # Worst performer? spend floor + (zero conv w/ enough clicks, or CPA blowout)
+        # Worst performer? spend floor + (zero conv w/ enough clicks, or CPL blowout)
         wasteful = (
             cost >= t["min_spend"] * 1_000_000
             and (
                 (conv == 0 and clicks >= t["min_clicks_no_conv"])
-                or (this_cpa is not None and this_cpa > target_cpa * t["cpa_multiplier"])
+                or (this_cpa is not None and this_cpa > target * t["cpa_multiplier"])
             )
         )
         if not wasteful or match_type not in NEXT_STEP:
@@ -79,12 +79,12 @@ def run(client):
         reason = (
             f"{fmt_money(cost)} spend, {clicks} clicks, 0 conv"
             if conv == 0
-            else f"CPA ${this_cpa:,.2f} vs target ${target_cpa:,.2f}"
+            else f"CPL ${this_cpa:,.2f} vs target ${target:,.2f}"
         )
         f.add(
             {
                 "type": "demote_keyword",
-                "customer_id": CUSTOMER_ID,
+                "customer_id": get_customer_id(),
                 "ad_group_id": str(r.ad_group.id),
                 "criterion_id": str(kw.criterion_id),
                 "keyword_text": kw.keyword.text,

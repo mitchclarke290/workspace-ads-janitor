@@ -4,17 +4,23 @@ Isolated workspace for the **ads-janitor** sub-agent. Job: audit Google Ads asse
 
 ## Target Account
 
-- **TEST account (active now): `6066113101`** (606-611-3101), under **test MCC `8423405897`** (842-340-5897).
-  - login-customer-id = `8423405897` (already set in MCP config + write client).
-  - This is a sandbox test account — safe to build and exercise mutations against.
-- **Production target (future, once Basic access approved): `6650239393`** (665-023-9393) under production MCC `5671434588`. Do NOT target this until Basic access is granted and it's explicitly switched on.
+- **Active MCC:** `5671434588` (567-143-4588) — login-customer-id for MCP + write client.
+- **Daily audit CIDs:**
+  - `1173238911` (117-323-8911) — The Waterproofing Pros
+  - `3442012546` (344-201-2546) — Auto Image- East
+  - `2837637005` (283-763-7005) — Eat Clean Bro
+  - `5526102045` (552-610-2045) — Rocco Steakhouse
+  - `6983036531` (698-303-6531) — Simply Solar
+  - `4973002366` (497-300-2366) — Dreamhouse Mortgage
+- **Test sandbox (do not audit unless explicitly asked):** `6066113101` under test MCC `8423405897`.
+- **KPI benchmarks:** Google Sheet `Ads Janitor KPI Benchmarks` (id in `scripts/config.json`). Each audit reads that CID's Target CPL (spend ÷ conversions). When a CID is added to the monitoring list, the next audit adds a row if it is missing. Target CPC is stored there and is not an audit gate.
 - Do NOT touch any other account.
 
 ## How to call Google Ads
 
 - **Reads / audits** → `google-ads` MCP server, tool `search_search` (GAQL SELECT). Read-only.
 - **Writes / mutations** → native `google-ads` Python client via the workspace venv:
-  `~/.openclaw/workspaces/ads-janitor/.venv/bin/python`, login_customer_id `8423405897`.
+  `~/.openclaw/workspaces/ads-janitor/.venv/bin/python`, login_customer_id `5671434588`.
   Services: `GoogleAdsService` (search+mutate), `AdGroupCriterionService` (keyword match-type steps + phrase negatives).
   Every mutation is gated behind double-confirmed Slack approval.
 
@@ -25,14 +31,14 @@ Isolated workspace for the **ads-janitor** sub-agent. Job: audit Google Ads asse
 
 ## Schedule
 
-- **Daily audit: 12:00 PM ET** (cron job `ads-janitor-daily-audit`, isolated session, delivers to `#ads-janitor`).
+- **Daily audit: 9:30 AM ET** (cron job `ads-janitor-daily-audit`, isolated session, delivers to `#ads-janitor`).
 - Each scheduled run executes `scripts/run_audit.py` (read-only), posts the summary to Slack, then STOPS. No mutations without Mitchell's two live Slack confirmations.
 - Full runbook: `scripts/README.md`.
 
 ## The Workflow (per run)
 
-1. **Audit** (read-only): run the perusal scripts across each asset class — audience segments, geos, keywords, search terms, and other assets.
-2. **Summarize worst performers**: compile a concise report (per asset class) of the worst performers with the metrics that justify the call. Post to Slack.
+1. **Audit** (read-only): run the perusal scripts across each asset class — audience segments, keywords, search terms, and other assets. Do not audit or recommend geos.
+2. **Summarize worst performers**: post the spreadsheet for that run and the top 10 worst assets per account (ranked by spend). Full tables stay in `runs/`. Do not list geo recommendations.
 3. **Request approval**: ask Mitchell which changes to make (Confirmation 1). Then echo back the exact change set verbatim and get Confirmation 2 before touching anything.
 4. **Execute** approved changes via the cleanup scripts (interactive runs only — scheduled runs stop at step 2).
 5. **Change log**: post to Slack + write to `runs/YYYY-MM-DD-<run>.md` — what was audited, proposed, approved, executed (IDs, before→after), results/errors.
@@ -59,7 +65,7 @@ These are absolute. If any rule is unclear or unmet, STOP and ask over Slack.
 
 ## Other Adjustments (proposal-only, still confirmation-gated)
 
-- **Geos** → propose exclusions or bid adjustments for worst-performing locations. Confirm before applying (two confirmations, same as above).
+- **Geos** → do not propose location exclusions or geo bid adjustments.
 - **Other assets** → propose sensible cleanup, flag for confirmation.
 - **Suggested extras** where data supports it (dayparting bid mods, device bid adjustments, low-QS keyword flags) — suggestions only, always double-confirmed before action.
 - **Budgets are REPORT-ONLY.** `scripts/audit_spend.py` reports money losers and over/underspend vs budget capacity; there is no budget mutation path in `apply_changes.py`. Budget reallocation is Mitchell's manual decision in the Google Ads UI.
