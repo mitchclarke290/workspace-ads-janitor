@@ -95,6 +95,10 @@ def run(client):
             {
                 "type": "audience_bid_down",
                 "customer_id": get_customer_id(),
+                "campaign_id": str(r.campaign.id),
+                "campaign_name": r.campaign.name,
+                "ad_group_id": str(r.ad_group.id),
+                "ad_group_name": r.ad_group.name,
                 "resource_name": crit.resource_name,
                 "segment_key": seg_key,
                 "current_bid_modifier": current,

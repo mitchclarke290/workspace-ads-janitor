@@ -65,6 +65,9 @@ def describe(item):
                 f'from campaign {a["campaign_id"]}')
     if t == "pause_ad":
         return f'{item["id"]} [{acct}]: pause ad {a["ad_id"]} in ad group {a["ad_group_id"]}'
+    if t == "pause_ad_copy":
+        return (f'{item["id"]} [{acct}]: remove {a["field_type"]} "{a["text"]}" '
+                f'from ad {a["ad_id"]} in ad group {a["ad_group_id"]}')
     return f'{item["id"]} [{acct}]: UNSUPPORTED action type "{t}"'
 
 
@@ -143,6 +146,77 @@ def exec_exclude_geo(client, a):
     return [r.resource_name for r in res.results]
 
 
+def _unpinned(asset):
+    name = getattr(getattr(asset, "pinned_field", None), "name", "") or ""
+    return name in ("UNSPECIFIED", "UNKNOWN", "")
+
+
+def exec_pause_ad_copy(client, a):
+    """Remove one unpinned RSA headline or description. Refuses if the live ad
+    would drop below the responsive-search-ad minimum."""
+    from google.protobuf.field_mask_pb2 import FieldMask
+    from gads_common import gaql
+
+    cid = action_cid(a)
+    field = a["field_type"]
+    if field not in ("HEADLINE", "DESCRIPTION"):
+        raise ValueError(f"pause_ad_copy only removes HEADLINE or DESCRIPTION, got {field}")
+    from gads_common import THRESHOLDS
+    floor = {"HEADLINE": 3, "DESCRIPTION": 2}[field]
+    configured = int(THRESHOLDS.get("assets", {}).get("min_remaining", {}).get(field, floor))
+    minimum = max(floor, configured)
+
+    ad_group_id = str(a["ad_group_id"])
+    ad_id = str(a["ad_id"])
+    if not ad_group_id.isdigit() or not ad_id.isdigit():
+        raise ValueError("ad group id and ad id must be numeric")
+    rows = gaql(client, f"""
+        SELECT
+          ad_group_ad.ad.responsive_search_ad.headlines,
+          ad_group_ad.ad.responsive_search_ad.descriptions
+        FROM ad_group_ad
+        WHERE ad_group.id = {ad_group_id}
+          AND ad_group_ad.ad.id = {ad_id}
+    """, customer_id=cid)
+    if not rows:
+        raise RuntimeError(f"ad {a['ad_id']} not found in ad group {a['ad_group_id']}")
+    rsa = rows[0].ad_group_ad.ad.responsive_search_ad
+    current = list(rsa.headlines if field == "HEADLINE" else rsa.descriptions)
+    kept = []
+    removed = False
+    for asset in current:
+        if not removed and asset.text == a["text"] and _unpinned(asset):
+            removed = True
+            continue
+        kept.append(asset)
+    if not removed:
+        raise RuntimeError(
+            f'{field} "{a["text"]}" is not an unpinned asset on ad {a["ad_id"]} anymore'
+        )
+    if len(kept) < minimum:
+        raise RuntimeError(
+            f"refusing to remove {field}: {len(kept)} would remain, minimum is {minimum}"
+        )
+
+    svc = client.get_service("AdService")
+    op = client.get_type("AdOperation")
+    update = op.update
+    update.resource_name = svc.ad_path(cid, a["ad_id"])
+    dest = (update.responsive_search_ad.headlines if field == "HEADLINE"
+            else update.responsive_search_ad.descriptions)
+    for asset in kept:
+        copy = client.get_type("AdTextAsset")
+        copy.text = asset.text
+        if not _unpinned(asset):
+            copy.pinned_field = asset.pinned_field
+        dest.append(copy)
+    mask = ("responsive_search_ad.headlines" if field == "HEADLINE"
+            else "responsive_search_ad.descriptions")
+    client.copy_from(op.update_mask, FieldMask(paths=[mask]))
+    res = svc.mutate_ads(customer_id=cid, operations=[op])
+    return [r.resource_name for r in res.results]
+
+
 def exec_pause_ad(client, a):
     from google.protobuf.field_mask_pb2 import FieldMask
     cid = action_cid(a)
@@ -163,6 +237,7 @@ EXECUTORS = {
     "negate_search_term": exec_negate_search_term,
     "audience_bid_down": exec_audience_bid_down,
     "pause_ad": exec_pause_ad,
+    "pause_ad_copy": exec_pause_ad_copy,
 }
 
 
@@ -246,6 +321,16 @@ def main():
             resources = EXECUTORS[a["type"]](client, a)
             ok.append(item["id"])
             log.append(f"- DONE {describe(item)}")
+            try:
+                from change_ledger import record_change
+                tracked = record_change(client, item)
+                note = (f"tracked as `{tracked['id']}`; "
+                        f"campaign follow-up {tracked['next_check']}")
+                if tracked.get("baseline_error"):
+                    note += f"; baseline snapshot failed: {tracked['baseline_error']}"
+                log.append(f"    - {note}")
+            except Exception as e:
+                log.append(f"    - change executed; ledger write failed: {type(e).__name__}: {e}")
             for rn in resources:
                 log.append(f"    - {rn}")
         except Exception as e:

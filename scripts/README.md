@@ -27,9 +27,13 @@ $VENV scripts/run_audit.py
 - Then runs the audits (keywords, search terms, audiences, geos, ads/assets,
   spend report, dayparting/devices).
 - Prints a short Slack index -> post it to `#ads-janitor` verbatim.
+- If a recorded change is a week old, the index includes that campaign's
+  new 7-day performance against the baseline. Mitchell can reply
+  `SNOOZE F1` to look again in 7 days (`scripts/change_ledger.py snooze F1`).
+  Snooze only moves the check date. It does not mutate Google Ads.
 - Writes `runs/<ts>-audit.json`, markdown tables at `runs/<ts>-audit.md`, a formatted workbook at `runs/<ts>-audit.xlsx`, and `memory/pending-approvals.json`.
 - Proposals carry IDs: `K*` keywords, `S*` search terms, `A*` audiences,
-  `G*` geos, `D*` disapproved ads. `[suggestion]` and `[review]` lines
+  `AC*` ad copy, `G*` geos, `D*` disapproved ads. `[suggestion]` and `[review]` lines
   (including all `B*` spend and `C*` conversion-health items) have no
   executable action — they are for Mitchell to consider.
 - Scheduled runs STOP HERE. No mutation on cron, ever.
@@ -61,6 +65,10 @@ $VENV scripts/apply_changes.py --ids K1,S2,A1 --execute
   more than 25 actions are selected.
 - Applies changes, writes `runs/<ts>-changes.md`, updates
   `memory/audience-bid-state.json` for audience bid-downs.
+- Appends each successful change to `memory/change-ledger.json` with the
+  prior 7 days of campaign performance (plus ad group, keyword, or ad when
+  that is the level that changed). The change log names the follow-up id
+  (`F1`) and the date it will be checked.
 - Post the printed change log to Slack.
 
 Anything else from Mitchell (`cancel`, a new SELECT, silence) = do not
@@ -74,6 +82,7 @@ execute; restart from step 2 or drop the batch.
 | `negate_search_term` | Adds a campaign-level PHRASE negative keyword. |
 | `audience_bid_down` | Sets criterion bid_modifier to current x 0.95, once per segment per 21 days (gated by `memory/audience-bid-state.json`). |
 | `pause_ad` | Pauses a disapproved ad (fix + resubmit is manual). |
+| `pause_ad_copy` | Removes one unpinned RSA headline or description that Google rated LOW (at least 500 impressions). Refuses if the ad would have fewer than 3 headlines or 2 descriptions. Does not write replacement copy. |
 
 Geo exclusions are not recommended and `apply_changes.py` refuses `exclude_geo`.
 

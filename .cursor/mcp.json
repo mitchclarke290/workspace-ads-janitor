@@ -17,11 +17,11 @@
       }
     },
     "openclaw": {
-      "url": "http://127.0.0.1:63861/mcp",
+      "url": "http://127.0.0.1:60862/mcp",
       "alwaysLoad": true,
       "headers": {
-        "Authorization": "Bearer 929abe5a909d75ef8179e513807d9994f45327fe0c466e0e6e53fa36c271b17d",
-        "x-openclaw-cli-capture-key": "7607aa0e-e8e5-4eff-aca8-c715ec8e5564"
+        "Authorization": "Bearer 0ef113ad6d96e2cde0b8233d9505cb597c308a90b7f41e935b3f72d131f957fc",
+        "x-openclaw-cli-capture-key": "677e14e5-2425-4794-9a79-5e4dee4b4d3b"
       },
       "timeout": 3610000
     }

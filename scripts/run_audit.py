@@ -29,6 +29,7 @@ import audit_keywords
 import audit_search_terms
 import audit_audiences
 import audit_ads_assets
+import audit_ad_copy
 import audit_spend
 import audit_schedule_devices
 import audit_conversion_health
@@ -41,7 +42,8 @@ SECTIONS = [
     ("keywords", "Keywords (demotion ladder)", audit_keywords, True),
     ("search_terms", "Search terms (phrase negatives)", audit_search_terms, True),
     ("audiences", "Audiences (-5% / 21-day cadence)", audit_audiences, True),
-    ("ads_assets", "Ads & assets (disapprovals, low assets)", audit_ads_assets, False),
+    ("ads_assets", "Ads (disapprovals)", audit_ads_assets, False),
+    ("ad_copy", "Ad copy (low headlines & descriptions)", audit_ad_copy, False),
     ("spend", "Spend report (over/underspend - report only)", audit_spend, True),
     ("schedule_devices", "Dayparting & devices (suggestions)", audit_schedule_devices, True),
 ]
@@ -164,6 +166,17 @@ def _audience_reason(item):
             f"bid change was ≥ {rule['cadence_days']} days ago. Bid × {rule['bid_down_factor']}.")
 
 
+def _ad_copy_reason(item):
+    detail = item.get("detail") or {}
+    rule = THRESHOLDS["assets"]
+    field = (item.get("action") or {}).get("field_type") or "asset"
+    minimum = (rule.get("min_remaining") or {}).get(field, "the RSA minimum")
+    return (f"Google rated this {field.lower()} LOW after "
+            f"{_num(detail.get('impressions'))} impressions "
+            f"(floor {rule['min_impressions']}). Removing it leaves at least "
+            f"{minimum} {field.lower()}s. Pinned copy is not removed.")
+
+
 def _geo_reason(item):
     detail = item.get("detail") or {}
     rule = THRESHOLDS["geos"]
@@ -216,6 +229,13 @@ def _section_rows(key, items):
                 _money(detail.get("cost_micros")), _num(detail.get("conversions")),
                 _cpa(detail.get("cpa")), _geo_reason(item),
             ])
+        elif key == "ad_copy" and action.get("type") == "pause_ad_copy":
+            rows.append([
+                item["id"], action.get("field_type"), action.get("text"),
+                f"{action.get('campaign_name')}/{action.get('ad_group_name')}",
+                action.get("ad_id"), _num(detail.get("impressions")),
+                _ad_copy_reason(item),
+            ])
         elif key == "ads_assets" and action.get("type") == "pause_ad":
             parsed = _between(summary, r"Pause DISAPPROVED ad (\d+) \((.+?)\)")
             rows.append([
@@ -267,6 +287,8 @@ def _section_headers(key, items):
         return ["ID", "Audience", "Campaign / ad group", "Bid", "Spend", "Conv", "CPL", "Reasoning"]
     if key == "geos":
         return ["ID", "Location", "Campaign", "Spend", "Conv", "CPL", "Reasoning"]
+    if key == "ad_copy" and action.get("type") == "pause_ad_copy":
+        return ["ID", "Field", "Copy", "Campaign / ad group", "Ad", "Impr", "Reasoning"]
     if key == "ads_assets" and action.get("type") == "pause_ad":
         return ["ID", "Ad", "Campaign / ad group", "Status", "Reasoning"]
     if key == "spend":
@@ -389,6 +411,11 @@ def _flat_record(account, title, item, executable):
         where = parsed[1] if parsed else ""
         change = "exclude"
         reasoning = _geo_reason(item)
+    elif kind == "pause_ad_copy":
+        what = action.get("text") or what
+        where = f"{action.get('campaign_name')}/{action.get('ad_group_name')}"
+        change = f"remove {action.get('field_type')}"
+        reasoning = _ad_copy_reason(item)
     elif kind == "pause_ad":
         parsed = _between(summary, r"Pause DISAPPROVED ad (\d+) \((.+?)\)")
         what = parsed[0] if parsed else action.get("ad_id")
@@ -594,7 +621,7 @@ def actionable_items(results):
     return items
 
 
-def render_slack(ts, per_account, total_actions):
+def render_slack(ts, per_account, total_actions, followups=""):
     xlsx = (RUNS / f"{ts}-audit.xlsx").resolve()
     lines = [
         f"*GAds audit - {len(per_account)} accounts - last {THRESHOLDS['lookback_days']}d - {ts}*",
@@ -625,6 +652,8 @@ def render_slack(ts, per_account, total_actions):
         )
     else:
         lines.append("No actionable worst performers this run.")
+    if followups:
+        lines += ["", followups]
     lines += ["", f"MEDIA:{xlsx}"]
     return "\n".join(lines)
 
@@ -669,7 +698,13 @@ def main():
     })
     (RUNS / f"{ts}-audit.md").write_text(render_markdown(ts, per_account, total_actions))
     write_spreadsheet(RUNS / f"{ts}-audit.xlsx", ts, per_account, total_actions)
-    print(render_slack(ts, per_account, total_actions))
+    from change_ledger import collect_due, render_followups
+    followups = ""
+    try:
+        followups = render_followups(collect_due(client))
+    except Exception as e:
+        followups = f"*Change follow-ups*\nLookup failed: {type(e).__name__}: {e}"
+    print(render_slack(ts, per_account, total_actions, followups))
 
 
 if __name__ == "__main__":

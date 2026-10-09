@@ -84,6 +84,7 @@ def run(client):
                 "type": "negate_search_term",
                 "customer_id": get_customer_id(),
                 "campaign_id": campaign_id,
+                "campaign_name": a["campaign_name"],
                 "term": term,
                 "match_type": "PHRASE",
             },

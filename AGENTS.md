@@ -41,7 +41,7 @@ Isolated workspace for the **ads-janitor** sub-agent. Job: audit Google Ads asse
 2. **Summarize worst performers**: post the spreadsheet for that run and the top 10 worst assets per account (ranked by spend). Full tables stay in `runs/`. Do not list geo recommendations.
 3. **Request approval**: ask Mitchell which changes to make (Confirmation 1). Then echo back the exact change set verbatim and get Confirmation 2 before touching anything.
 4. **Execute** approved changes via the cleanup scripts (interactive runs only — scheduled runs stop at step 2).
-5. **Change log**: post to Slack + write to `runs/YYYY-MM-DD-<run>.md` — what was audited, proposed, approved, executed (IDs, before→after), results/errors.
+5. **Change log**: post to Slack + write to `runs/YYYY-MM-DD-<run>.md` — what was audited, proposed, approved, executed (IDs, before→after), results/errors. Every successful mutation is also recorded in `memory/change-ledger.json` with the campaign's prior-7-day performance. The daily audit resurfaces that campaign one week later. If Mitchell replies `SNOOZE F1`, run `scripts/change_ledger.py snooze F1` and confirm the new check date. Snooze does not mutate Google Ads.
 
 ## 🔒 Operating Rules (authoritative — mirror of SOUL.md hard rules)
 
@@ -62,10 +62,12 @@ These are absolute. If any rule is unclear or unmet, STOP and ask over Slack.
    - If < 21 days since last adjustment: **skip** and report the reason (and the date it becomes eligible).
 6. **Change log after every successful mutation batch.** Post a change log to Slack AND write it to `runs/`:
    - What changed, resource IDs, before → after values, timestamp, and who approved.
+   - `memory/change-ledger.json` stores the same change plus 7-day campaign (and ad group / ad / keyword, when that is what changed) performance at the time of the change. The next daily audit, one week later, compares the campaign's new 7 days with that baseline. `SNOOZE <id>` pushes the next comparison out 7 days.
 
 ## Other Adjustments (proposal-only, still confirmation-gated)
 
 - **Geos** → do not propose location exclusions or geo bid adjustments.
+- **Ad copy** → `scripts/audit_ad_copy.py` proposes removing one unpinned RSA headline or description that Google rated LOW. `apply_changes.py` removes that asset only, and refuses if the ad would drop below 3 headlines or 2 descriptions. Pinned copy stays. No replacement text is written.
 - **Other assets** → propose sensible cleanup, flag for confirmation.
 - **Suggested extras** where data supports it (dayparting bid mods, device bid adjustments, low-QS keyword flags) — suggestions only, always double-confirmed before action.
 - **Budgets are REPORT-ONLY.** `scripts/audit_spend.py` reports money losers and over/underspend vs budget capacity; there is no budget mutation path in `apply_changes.py`. Budget reallocation is Mitchell's manual decision in the Google Ads UI.
@@ -86,7 +88,7 @@ These are absolute. If any rule is unclear or unmet, STOP and ask over Slack.
 
 - `scripts/` — maintenance scripts Mitch provides (audit + cleanup).
 - `runs/` — dated run logs + change logs.
-- `memory/` — durable state that must persist across runs, incl. **`audience-bid-state.json`** (per-segment last-adjusted dates for the 21-day cadence gate).
+- `memory/` — durable state that must persist across runs, incl. **`audience-bid-state.json`** (per-segment last-adjusted dates for the 21-day cadence gate) and **`change-ledger.json`** (mutation performance snapshots and week-later follow-ups).
 
 ## Credentials
 

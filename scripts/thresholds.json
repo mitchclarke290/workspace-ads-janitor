@@ -42,6 +42,10 @@
     "bid_down_pct": 15
   },
   "assets": {
-    "min_impressions": 500
+    "min_impressions": 500,
+    "min_remaining": {
+      "HEADLINE": 3,
+      "DESCRIPTION": 2
+    }
   }
 }

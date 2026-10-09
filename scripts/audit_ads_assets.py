@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Ads & assets audit:
-  - Disapproved / limited ads -> pause proposal + fix flag
-  - RSA assets with "LOW" performance label -> review flags
+Ads audit:
+  - Disapproved ads -> pause proposal
+  - Policy-limited ads -> review flags
+
+Low RSA headlines and descriptions are audited by audit_ad_copy.py.
 """
-from gads_common import Findings, THRESHOLDS, gaql, get_customer_id
+from gads_common import Findings, gaql, get_customer_id
 
 
 def run(client):
@@ -14,7 +16,7 @@ def run(client):
     # Disapproved or policy-limited ads
     rows = gaql(client, """
         SELECT
-          campaign.name, ad_group.id, ad_group.name,
+          campaign.id, campaign.name, ad_group.id, ad_group.name,
           ad_group_ad.ad.id, ad_group_ad.ad.type,
           ad_group_ad.policy_summary.approval_status,
           ad_group_ad.status
@@ -30,7 +32,10 @@ def run(client):
                 {
                     "type": "pause_ad",
                     "customer_id": get_customer_id(),
+                    "campaign_id": str(r.campaign.id),
+                    "campaign_name": r.campaign.name,
                     "ad_group_id": str(r.ad_group.id),
+                    "ad_group_name": r.ad_group.name,
                     "ad_id": str(r.ad_group_ad.ad.id),
                 },
                 f"Pause DISAPPROVED ad {r.ad_group_ad.ad.id} "
@@ -43,32 +48,6 @@ def run(client):
                 f"Ad {r.ad_group_ad.ad.id} is {approval} "
                 f"({r.campaign.name}/{r.ad_group.name}) - review policy details",
                 {"approval_status": approval},
-            )
-
-    # Low-performing RSA assets (review-only; replacement needs new copy)
-    t = THRESHOLDS["assets"]
-    rows = gaql(client, """
-        SELECT
-          campaign.name, ad_group.name,
-          ad_group_ad.ad.id,
-          ad_group_ad_asset_view.field_type,
-          ad_group_ad_asset_view.performance_label,
-          asset.id, asset.text_asset.text,
-          metrics.impressions
-        FROM ad_group_ad_asset_view
-        WHERE ad_group_ad_asset_view.enabled = TRUE
-          AND campaign.status = 'ENABLED'
-    """)
-    for r in rows:
-        label = r.ad_group_ad_asset_view.performance_label.name
-        if label == "LOW" and r.metrics.impressions >= t["min_impressions"]:
-            text = r.asset.text_asset.text or f"asset {r.asset.id}"
-            flags.add(
-                {"type": "flag_only"},
-                f'RSA {r.ad_group_ad_asset_view.field_type.name} "{text}" rated LOW '
-                f"({r.campaign.name}/{r.ad_group.name}, ad {r.ad_group_ad.ad.id}) "
-                f"- draft a replacement",
-                {"impressions": r.metrics.impressions},
             )
 
     return f.to_dict(), flags.to_dict()

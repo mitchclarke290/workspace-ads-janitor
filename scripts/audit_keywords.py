@@ -85,7 +85,10 @@ def run(client):
             {
                 "type": "demote_keyword",
                 "customer_id": get_customer_id(),
+                "campaign_id": str(r.campaign.id),
+                "campaign_name": r.campaign.name,
                 "ad_group_id": str(r.ad_group.id),
+                "ad_group_name": r.ad_group.name,
                 "criterion_id": str(kw.criterion_id),
                 "keyword_text": kw.keyword.text,
                 "current_match_type": match_type,
